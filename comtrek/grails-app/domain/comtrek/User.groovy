@@ -1,5 +1,10 @@
 package comtrek
 
+/**
+ * 
+ * @author Paolo
+ *
+ */
 class User {
 
 	String firstName
