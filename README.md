@@ -4,7 +4,7 @@ comtrek
 
 Bilel Bakini
 Hamza Bey
-Paolo Le Vathaire
+Paolo de Vathaire
 Stéven BERNARD  
                                                                                                       06/12/2012
 
