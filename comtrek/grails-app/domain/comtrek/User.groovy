@@ -13,7 +13,6 @@ class User {
 	String login
 	String password
 	Date birthDate
-	String test
 	
 	static constraints = {
 		birthDate (nullable: true, max: new Date(Calendar.getInstance().getTime().year, Calendar.getInstance().getTime().month, Calendar.getInstance().getTime().date))
