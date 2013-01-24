@@ -1,6 +1,9 @@
 /target
 /target-eclipse
-/.settings
-/application.properties
+.settings
+application.properties
 *.class
-
+licence.txt
+*.db
+.classpath
+.project
