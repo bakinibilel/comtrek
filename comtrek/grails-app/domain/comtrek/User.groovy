@@ -9,7 +9,6 @@ class User {
 
 	String firstName
 	String lastName
-	String bbb
 	String email
 	String login
 	String password
