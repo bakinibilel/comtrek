@@ -14,7 +14,7 @@ grails.project.dependency.resolution = {
     }
     log "error" // log level of Ivy resolver, either 'error', 'warn', 'info', 'debug' or 'verbose'
     checksums true // Whether to verify checksums on resolve
-
+	pom true
     repositories {
         inherits true // Whether to inherit repository definitions from plugins
 
@@ -53,5 +53,6 @@ grails.project.dependency.resolution = {
 
         compile ':cache:1.0.1'
 		test ":spock:0.7"
+		test ":code-coverage:1.2.5"
     }
 }

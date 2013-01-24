@@ -4,3 +4,5 @@
 /application.properties
 *.class
 
+/comtrek_db.h2.db
+/comtrek_db.lock.db
