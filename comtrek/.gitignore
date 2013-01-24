@@ -3,17 +3,10 @@ target-eclipse
 .settings
 application.properties
 *.class
-<<<<<<< HEAD
-
 /comtrek_db.h2.db
 /comtrek_db.lock.db
-=======
 licence.txt
 *.db
 .classpath
 .project
-<<<<<<< HEAD
->>>>>>> branch 'master' of https://github.com/bakinibilel/comtrek.git
-=======
 /.link_to_grails_plugins
->>>>>>> branch 'master' of https://github.com/bakinibilel/comtrek.git
