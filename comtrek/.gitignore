@@ -1,8 +1,15 @@
 /target
 /target-eclipse
-/.settings
-/application.properties
+.settings
+application.properties
 *.class
+<<<<<<< HEAD
 
 /comtrek_db.h2.db
 /comtrek_db.lock.db
+=======
+licence.txt
+*.db
+.classpath
+.project
+>>>>>>> branch 'master' of https://github.com/bakinibilel/comtrek.git
