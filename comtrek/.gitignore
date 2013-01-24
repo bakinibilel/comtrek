@@ -1,6 +1,5 @@
 target
 target-eclipse
-.settings
 application.properties
 *.class
 license.txt
