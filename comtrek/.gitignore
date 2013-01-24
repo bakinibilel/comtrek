@@ -6,6 +6,5 @@ application.properties
 license.txt
 *.db
 .classpath
-.project
 .link_to_grails_plugins
 bin
