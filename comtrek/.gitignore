@@ -3,10 +3,9 @@ target-eclipse
 .settings
 application.properties
 *.class
-/comtrek_db.h2.db
-/comtrek_db.lock.db
-licence.txt
+license.txt
 *.db
 .classpath
 .project
-/.link_to_grails_plugins
+.link_to_grails_plugins
+bin
