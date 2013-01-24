@@ -1,5 +1,5 @@
-/target
-/target-eclipse
+target
+target-eclipse
 .settings
 application.properties
 *.class
@@ -12,4 +12,8 @@ licence.txt
 *.db
 .classpath
 .project
+<<<<<<< HEAD
+>>>>>>> branch 'master' of https://github.com/bakinibilel/comtrek.git
+=======
+/.link_to_grails_plugins
 >>>>>>> branch 'master' of https://github.com/bakinibilel/comtrek.git
