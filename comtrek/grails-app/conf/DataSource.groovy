@@ -25,9 +25,11 @@ environments {
             dbCreate = "update"
 			driverClassName = "com.mysql.jdbc.Driver"
 			dialect = org.hibernate.dialect.MySQL5InnoDBDialect
-            url = "jdbc:mysql://localhost/comtrek_db"
-			username = "comtrek"
-			password = "ivvqcomtrek"
+            //url = "jdbc:mysql://localhost/comtrek_db"
+			
+			url = "jdbc:h2:mem:testDb;MVCC=TRUE;LOCK_TIMEOUT=10000"
+			//username = "comtrek"
+			//password = "ivvqcomtrek"
             pooled = true
             properties {
                maxActive = -1
