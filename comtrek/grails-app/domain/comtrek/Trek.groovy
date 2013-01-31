@@ -5,7 +5,7 @@ import java.util.Date;
 
 class Trek {
 
-   String name
+    String name
 	Float distance
 	Integer level
 	Integer attitude_combined
@@ -16,8 +16,7 @@ class Trek {
 	
 	static constraints = {
 		
-		name blank:false, nullable:false, size:3..30, matches:"[a-zA-Z1-9_]+"
-		lastName blank:false, nullable:false, size:3..30, matches:"[a-zA-Z1-9_]+"
+		name blank:false, nullable:false, size:3..20, matches:"[a-zA-Z1-9_]+"
 		level range: 1..5
 		max_altitude range: 0..10000
 		average_note range: 0..5
