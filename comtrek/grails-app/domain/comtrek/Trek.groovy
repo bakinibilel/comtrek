@@ -17,6 +17,7 @@ class Trek {
 	static constraints = {
 		
 		name blank:false, nullable:false, size:3..20, matches:"[a-zA-Z1-9_]+"
+		distance blank:false, nullable:false
 		level range: 1..5
 		max_altitude range: 0..10000
 		average_note range: 0..5
