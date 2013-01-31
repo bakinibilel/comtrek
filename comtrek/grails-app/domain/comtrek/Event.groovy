@@ -5,9 +5,8 @@ class Event {
 	int id
 	Date effectiveTime
 	int averageNote
-//	static hasMany = [comments: Comment]
-//	static hasOne Trek
-//	static hasOne Comment
+	static hasOne = [trek: Trek, user: User]
+	static hasMany = [comments: Comment, participants: Participant]
 	
 
     static constraints = {
