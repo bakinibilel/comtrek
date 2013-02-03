@@ -35,6 +35,7 @@ class Trek {
 		weather_link column: "weather_link"
 		average_note column: "average_note"
 		average_time column: "average_time"
+		
 	}
 	
 	String toString(){
