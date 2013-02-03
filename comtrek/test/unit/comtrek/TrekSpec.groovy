@@ -50,6 +50,7 @@ class TrekSpec extends Specification{
 		'nullable'             | 'name'       | null
 		'size'                 | 'name'       | getLongString(2)
 		'nullable'             | 'level'      | null
+		'nullable'             | 'level'      | null
 
 	}
 	
