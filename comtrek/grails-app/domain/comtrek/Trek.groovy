@@ -5,6 +5,8 @@ import java.util.Date;
 
 class Trek {
 
+	static hasMany = [events: Event]
+	
     String name
 	Float distance
 	Integer level

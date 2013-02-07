@@ -2,12 +2,12 @@
 
 
 
-<div class="fieldcontain ${hasErrors(bean: userInstance, field: 'birthDate', 'error')} ">
+<div class="fieldcontain ${hasErrors(bean: userInstance, field: 'birthDate', 'error')} required">
 	<label for="birthDate">
 		<g:message code="user.birthDate.label" default="Birth Date" />
-		
+		<span class="required-indicator">*</span>
 	</label>
-	<g:datePicker name="birthDate" precision="day"  value="${userInstance?.birthDate}" default="none" noSelection="['': '']" />
+	<g:datePicker name="birthDate" precision="day"  value="${userInstance?.birthDate}"  />
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: userInstance, field: 'firstName', 'error')} required">
@@ -24,6 +24,14 @@
 		<span class="required-indicator">*</span>
 	</label>
 	<g:textField name="lastName" maxlength="30" pattern="${userInstance.constraints.lastName.matches}" required="" value="${userInstance?.lastName}"/>
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: userInstance, field: 'gender', 'error')} ">
+	<label for="gender">
+		<g:message code="user.gender.label" default="Gender" />
+		
+	</label>
+	<g:select name="gender" from="${userInstance.constraints.gender.inList}" value="${userInstance?.gender}" valueMessagePrefix="user.gender" noSelection="['': '']"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: userInstance, field: 'email', 'error')} ">
@@ -48,5 +56,22 @@
 		<span class="required-indicator">*</span>
 	</label>
 	<g:field type="password" name="password" maxlength="15" required="" value="${userInstance?.password}"/>
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: userInstance, field: 'events', 'error')} ">
+	<label for="events">
+		<g:message code="user.events.label" default="Events" />
+		
+	</label>
+	
+<ul class="one-to-many">
+<g:each in="${userInstance?.events?}" var="e">
+    <li><g:link controller="event" action="show" id="${e.id}">${e?.encodeAsHTML()}</g:link></li>
+</g:each>
+<li class="add">
+<g:link controller="event" action="create" params="['user.id': userInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'event.label', default: 'Event')])}</g:link>
+</li>
+</ul>
+
 </div>
 

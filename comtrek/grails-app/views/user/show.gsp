@@ -50,6 +50,15 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${userInstance?.gender}">
+				<li class="fieldcontain">
+					<span id="gender-label" class="property-label"><g:message code="user.gender.label" default="Gender" /></span>
+					
+						<span class="property-value" aria-labelledby="gender-label"><g:fieldValue bean="${userInstance}" field="gender"/></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${userInstance?.email}">
 				<li class="fieldcontain">
 					<span id="email-label" class="property-label"><g:message code="user.email.label" default="Email" /></span>
@@ -66,7 +75,28 @@
 						<span class="property-value" aria-labelledby="login-label"><g:fieldValue bean="${userInstance}" field="login"/></span>
 					
 				</li>
-				</g:if>			
+				</g:if>
+			
+				<g:if test="${userInstance?.password}">
+				<li class="fieldcontain">
+					<span id="password-label" class="property-label"><g:message code="user.password.label" default="Password" /></span>
+					
+						<span class="property-value" aria-labelledby="password-label"><g:fieldValue bean="${userInstance}" field="password"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${userInstance?.events}">
+				<li class="fieldcontain">
+					<span id="events-label" class="property-label"><g:message code="user.events.label" default="Events" /></span>
+					
+						<g:each in="${userInstance.events}" var="e">
+						<span class="property-value" aria-labelledby="events-label"><g:link controller="event" action="show" id="${e.id}">${e?.encodeAsHTML()}</g:link></span>
+						</g:each>
+					
+				</li>
+				</g:if>
+			
 			</ol>
 			<g:form>
 				<fieldset class="buttons">

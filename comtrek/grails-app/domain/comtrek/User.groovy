@@ -17,6 +17,8 @@ package comtrek
  */
 class User {
 
+	static hasMany = [events: Event]
+	
 	String firstName
 	String lastName
     String gender
