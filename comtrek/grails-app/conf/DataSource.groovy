@@ -12,6 +12,7 @@ dataSource {
     pooled = true
     username = "comtrek"
     password = "ivvqcomtrek"
+	driverClassName = "com.mysql.jdbc.Driver"
 }
 hibernate {
     cache.use_second_level_cache = true
@@ -23,11 +24,7 @@ environments {
     development {
          dataSource {
             dbCreate = "update"
-            //url = "java:comp/env/jdbc/comtrek_db;MVCC=TRUE;LOCK_TIMEOUT=10000"
-            //url = "jdbc:h2:comtrek_db;MVCC=TRUE;LOCK_TIMEOUT=10000"
-			driverClassName = "com.cloudbees.jdbc.Driver"
-			url = "[[jdbc:cloudbees://comtrek_db]]"
-
+			url = "jdbc:mysql://localhost/comtrek_db"
             pooled = true
             properties {
                maxActive = -1
@@ -44,9 +41,8 @@ environments {
     test {
          dataSource {
             dbCreate = "update"
-			driverClassName = "com.mysql.jdbc.Driver"
 			dialect = org.hibernate.dialect.MySQL5InnoDBDialect
-            url = "jdbc:mysql://localhost/comtrek_db"
+            url = "jdbc:mysql://cloudbees/comtrek_db"
 			
 //			url = "jdbc:h2:mem:testDb;MVCC=TRUE;LOCK_TIMEOUT=10000"
 			//username = "comtrek"
@@ -67,11 +63,7 @@ environments {
     production {
         dataSource {
             dbCreate = "update"
-            //url = "java:comp/env/jdbc/comtrek_db;MVCC=TRUE;LOCK_TIMEOUT=10000"
-            //url = "jdbc:h2:comtrek_db;MVCC=TRUE;LOCK_TIMEOUT=10000"
-			driverClassName = "com.cloudbees.jdbc.Driver"
-			url = "[[jdbc:cloudbees://comtrek_db]]"
-
+			url = "jdbc:mysql://cloudbees/comtrek_db"
             pooled = true
             properties {
                maxActive = -1
