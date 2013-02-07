@@ -17,6 +17,8 @@ package comtrek
  */
 class User {
 
+	static hasMany = [events: Event, participants: Participant]
+	
 	String firstName
 	String lastName
     String gender
@@ -24,7 +26,6 @@ class User {
 	String login
 	String password
 	Date birthDate
-	static hasMany = [paticipants: Participant, events: Event, treks: Trek]
 	
 	static constraints = {
 		birthDate (nullable: false, max: new Date(Calendar.getInstance().getTime().year, Calendar.getInstance().getTime().month, Calendar.getInstance().getTime().date))
