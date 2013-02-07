@@ -43,7 +43,7 @@ environments {
          dataSource {
             dbCreate = "update"
 			driverClassName = "com.mysql.jdbc.Driver"
-			url = "jdbc:cloudbees://comtrek_db"
+			url = "jdbc:mysql://comtrek_db"
             pooled = true
             properties {
                maxActive = -1
@@ -61,7 +61,7 @@ environments {
         dataSource {
             dbCreate = "update"
             driverClassName = "com.mysql.jdbc.Driver"
-            url = "jdbc:cloudbees://comtrek_db"
+            url = "jdbc:mysql://comtrek_db"
             pooled = true
             properties {
                maxActive = -1
