@@ -1,14 +1,4 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
-<!--
-  Copyright (c) 2013 ComTrek.
-  All rights reserved. This program and the accompanying materials
-  are made available under the terms of the GNU Public License v3.0
-  which accompanies this distribution, and is available at
-  http://www.gnu.org/licenses/gpl.html
-  
-  Contributors:
-      ComTrek - initial API and implementation
--->
 <!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN" "http://java.sun.com/dtd/web-jsptaglibrary_1_2.dtd">
 
 <taglib>

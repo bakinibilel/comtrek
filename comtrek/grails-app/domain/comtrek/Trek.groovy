@@ -1,3 +1,13 @@
+/*******************************************************************************
+ * Copyright (c) 2013 ComTrek.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the GNU Public License v3.0
+ * which accompanies this distribution, and is available at
+ * http://www.gnu.org/licenses/gpl.html
+ * 
+ * Contributors:
+ *     ComTrek - initial API and implementation
+ ******************************************************************************/
 package comtrek
 
 import java.util.Date;
@@ -14,6 +24,8 @@ class Trek {
 	String weather_link
 	Integer average_note
 	Integer average_time
+	static hasOne = [user: User]
+	static hasMany = [events: Event, comments: Comment]
 	
 	static constraints = {
 		

@@ -1,4 +1,13 @@
-
+#-------------------------------------------------------------------------------
+# Copyright (c) 2013 ComTrek.
+# All rights reserved. This program and the accompanying materials
+# are made available under the terms of the GNU Public License v3.0
+# which accompanies this distribution, and is available at
+# http://www.gnu.org/licenses/gpl.html
+# 
+# Contributors:
+#     ComTrek - initial API and implementation
+#-------------------------------------------------------------------------------
 <%@ page import="comtrek.User" %>
 <!DOCTYPE html>
 <html>
@@ -30,6 +39,8 @@
 					
 						<g:sortableColumn property="lastName" title="${message(code: 'user.lastName.label', default: 'Last Name')}" />
 					
+						<g:sortableColumn property="gender" title="${message(code: 'user.gender.label', default: 'Gender')}" />
+					
 						<g:sortableColumn property="email" title="${message(code: 'user.email.label', default: 'Email')}" />
 					
 						<g:sortableColumn property="login" title="${message(code: 'user.login.label', default: 'Login')}" />
@@ -46,10 +57,12 @@
 					
 						<td>${fieldValue(bean: userInstance, field: "lastName")}</td>
 					
+						<td>${fieldValue(bean: userInstance, field: "gender")}</td>
+					
 						<td>${fieldValue(bean: userInstance, field: "email")}</td>
 					
 						<td>${fieldValue(bean: userInstance, field: "login")}</td>
-						
+					
 					</tr>
 				</g:each>
 				</tbody>
