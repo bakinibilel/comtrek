@@ -24,6 +24,7 @@ class User {
 	String login
 	String password
 	Date birthDate
+	static hasMany = [user:User]
 	
 	static constraints = {
 		birthDate (nullable: false, max: new Date(Calendar.getInstance().getTime().year, Calendar.getInstance().getTime().month, Calendar.getInstance().getTime().date))
