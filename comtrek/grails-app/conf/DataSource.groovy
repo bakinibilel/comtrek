@@ -41,27 +41,27 @@ environments {
     }
     test {
          dataSource {
-            dbCreate = "update"
-			driverClassName = "com.mysql.jdbc.Driver"
-			url = "jdbc:mysql://localhost/comtrek_db"
-            pooled = true
-            properties {
-               maxActive = -1
-               minEvictableIdleTimeMillis=1800000
-               timeBetweenEvictionRunsMillis=1800000
-               numTestsPerEvictionRun=3
-               testOnBorrow=true
-               testWhileIdle=true
-               testOnReturn=true
-               validationQuery="SELECT 1"
-            }
+//            dbCreate = "update"
+//			driverClassName = "com.mysql.jdbc.Driver"
+//			url = "jdbc:mysql://localhost/comtrek_db"
+//            pooled = true
+//            properties {
+//               maxActive = -1
+//               minEvictableIdleTimeMillis=1800000
+//               timeBetweenEvictionRunsMillis=1800000
+//               numTestsPerEvictionRun=3
+//               testOnBorrow=true
+//               testWhileIdle=true
+//               testOnReturn=true
+//               validationQuery="SELECT 1"
+//            }
         }
     }
     production {
         dataSource {
             dbCreate = "update"
-            driverClassName = "com.mysql.jdbc.Driver"
-            url = "jdbc:mysql://localhost/comtrek_db"
+        	driverClassName = "com.cloudbees.jdbc.Driver"
+			url = "[[jdbc:cloudbees://comtrek_db]]"
             pooled = true
             properties {
                maxActive = -1
