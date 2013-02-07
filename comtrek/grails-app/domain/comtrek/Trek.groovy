@@ -14,8 +14,7 @@ import java.util.Date;
 
 
 class Trek {
-	static hasMany = [events: Event]
-	
+
     int id
     String name
 	Float distance
