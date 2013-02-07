@@ -4,9 +4,9 @@ import java.util.Date;
 
 
 class Trek {
-
 	static hasMany = [events: Event]
 	
+    int id
     String name
 	Float distance
 	Integer level
@@ -14,15 +14,16 @@ class Trek {
 	Integer max_altitude
 	String weather_link
 	Integer average_note
-	Date average_time
+	Integer average_time
 	
 	static constraints = {
 		
 		name blank:false, nullable:false, size:3..20, matches:"[a-zA-Z1-9_]+"
-		level range: 1..5
+		distance blank:false, nullable:false
+		level range: 1..5, nullable:false
 		max_altitude range: 0..10000
 		average_note range: 0..5
-		average_time (nullable: false, max: new Date(Calendar.getInstance().getTime().year, Calendar.getInstance().getTime().month, Calendar.getInstance().getTime().date))
+		
 	}
 
 	static mapping = {
@@ -35,6 +36,7 @@ class Trek {
 		weather_link column: "weather_link"
 		average_note column: "average_note"
 		average_time column: "average_time"
+		
 	}
 	
 	String toString(){
