@@ -22,6 +22,6 @@ class Event {
     static constraints = {
 		id blank: false, nullable: false, unique: true
 		effectiveTime blank: false, nullable: false
-		averageNote min: 0, max: 10, nullable: true
+		averageNote range: 1..10, nullable: false
     }
 }

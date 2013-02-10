@@ -18,7 +18,7 @@ class EventSpec extends Specification{
 
     def setup() {
 		//mock an event with some data (put unique violations in here so they can be tested, the others aren't needed)
-		mockForConstraintsTests(Event, [new Event(averageNote:2 )])
+		mockForConstraintsTests(Event, [new Event()])
 	}
 	
 	void validateConstraints(obj, field, error) {
@@ -43,8 +43,8 @@ class EventSpec extends Specification{
 
 		where:
 		error                  | field                | val
-		"range"                |"NaverageNote"        | -1
-		"range"                |"AverageNote"         | 11
+		"range"                |"averageNote"        | -1
+		"range"                |"averageNote"         | 11
 		"nullable"             |"effectiveTime"       | null
 
 	}
