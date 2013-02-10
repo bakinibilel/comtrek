@@ -14,18 +14,18 @@ import org.junit.*
 @TestFor(UserController)
 class UserControllerSpec extends Specification{
 
-//	def "test creating a user"() {
-//		when:
-//		def userCtrl = new UserController()
-//		userCtrl.params.
-//
-//		then:
-//		validateConstraints(obj, field, error)
-//
-//		where:
-//		error      | field       | val
-//		'nullable' | 'birthDate' | null
-//		'valid'    | 'birthDate' | new Date() - 1
-		//'valid'    | 'birthDate' | new Date()
-//	}
+	def "test creating a user"() {
+		when:
+		def userCtrl = new UserController()
+		userCtrl.params.
+
+		then:
+		validateConstraints(obj, field, error)
+
+		where:
+		error      | field       | val
+		'nullable' | 'birthDate' | null
+		'valid'    | 'birthDate' | new Date() - 1
+		'valid'    | 'birthDate' | new Date()
+	}
 }
