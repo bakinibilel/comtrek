@@ -8,7 +8,6 @@ http://www.gnu.org/licenses/gpl.html
 Contributors:
     ComTrek - initial API and implementation
 -->
-
 <!DOCTYPE html>
 <!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
 <!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
@@ -25,13 +24,37 @@ Contributors:
 		<link rel="apple-touch-icon" sizes="114x114" href="${resource(dir: 'images', file: 'apple-touch-icon-retina.png')}">
 		<link rel="stylesheet" href="${resource(dir: 'css', file: 'main.css')}" type="text/css">
 		<link rel="stylesheet" href="${resource(dir: 'css', file: 'mobile.css')}" type="text/css">
+		<link rel="stylesheet" href="${resource(dir: 'css', file: 'leftBar.css')}" type="text/css">
 		<g:layoutHead/>
 		<r:layoutResources />
 	</head>
 	<body>
-		<div id="grailsLogo" role="banner"><a href="http://grails.org"><img src="${resource(dir: 'images', file: 'grails_logo.png')}" alt="Grails"/></a></div>
-		<g:layoutBody/>
-		<div class="footer" role="contentinfo"></div>
+		<div id="grailsLogo" role="banner">
+			<table style="width:100%">
+				<tr>
+					<td align="center" style="width:50%;"><p style="color:white;font-weight:Bold;font-size:60px;">ComTrek</p></td>
+					<td style="text-align:right;"><img src="${resource(dir: 'images', file: 'trek.jpg')}" alt="Grails"/></td>
+				</tr>
+			</table>
+				
+		</div>
+		
+			<div id="content">
+				<div class="ligne">
+					<span class = "case"><g:render template="/common/leftbar"></g:render></span>
+						
+					<span class="case"><g:layoutBody/></span>
+				</div>
+			
+			</div>
+
+		<div class="footer" role="contentinfo">
+			<div id="footer" align="center">
+				<p style="color:white;font-size:18px;margin-bottom:5px;"><g:thisYear /></p>
+				<p style="color:white;font-size:18px;">Created by : <g:creat /><p/>
+			</div>
+		</div>
+		
 		<div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>
 		<g:javascript library="application"/>
 		<r:layoutResources />
