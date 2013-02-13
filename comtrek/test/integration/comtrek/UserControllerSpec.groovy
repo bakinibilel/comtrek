@@ -17,7 +17,7 @@ class UserControllerSpec extends Specification{
 	def "test creating a user"() {
 		when:
 		def userCtrl = new UserController()
-		userCtrl.params.
+		//userCtrl.params.
 
 		then:
 		validateConstraints(obj, field, error)

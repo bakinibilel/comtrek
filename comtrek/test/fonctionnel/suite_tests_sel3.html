@@ -3,13 +3,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="selenium.base" href="http://localhost:8080/" />
-<title>New Test</title>
+<link rel="selenium.base" href="http://localhost:8080/comtrek/" />
+<title>manage_event_test_sel</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">New Test</td></tr>
+<tr><td rowspan="1" colspan="3">manage_event_test_sel</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
@@ -18,38 +18,33 @@
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>link=comtrek.UserController</td>
+	<td>link=event</td>
 	<td></td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>link=New User</td>
+	<td>link=New Event</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=effectiveTime_day</td>
+	<td>label=1</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=effectiveTime_year</td>
+	<td>label=1913</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=create</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=firstName</td>
-	<td>steven</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=lastName</td>
-	<td>bernard</td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>id=gender</td>
-	<td>label=Male</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=login</td>
-	<td>login10</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=password</td>
-	<td>password</td>
+	<td>id=averageNote</td>
+	<td>1</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
@@ -62,20 +57,46 @@
 	<td></td>
 </tr>
 <tr>
+	<td>type</td>
+	<td>id=averageNote</td>
+	<td>3</td>
+</tr>
+<tr>
 	<td>clickAndWait</td>
 	<td>name=_action_update</td>
 	<td></td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>link=User List</td>
+	<td>link=Event List</td>
 	<td></td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>link=2013-02-11 00:00:00.0</td>
+	<td>link=1913-02-01 00:00:00.0</td>
 	<td></td>
 </tr>
+<tr>
+	<td>click</td>
+	<td>name=_action_delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Home</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/comtrek/event/show/4</td>
+	<td></td>
+</tr>
+
 </tbody></table>
 </body>
 </html>
