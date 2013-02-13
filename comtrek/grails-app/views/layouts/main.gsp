@@ -29,24 +29,23 @@ Contributors:
 		<r:layoutResources />
 	</head>
 	<body>
-		<div id="grailsLogo" role="banner">
-			<table style="width:100%">
+		<div style="background-color: #abbf78;">
+			<table id="header" style="width:100%" class="header">
 				<tr>
 					<td align="center" style="width:50%;"><p style="color:white;font-weight:Bold;font-size:60px;">ComTrek</p></td>
 					<td style="text-align:right;"><img src="${resource(dir: 'images', file: 'trek.jpg')}" alt="Grails"/></td>
 				</tr>
 			</table>
-				
 		</div>
 		
-			<div id="content">
-				<div class="ligne">
-					<span class = "case"><g:render template="/common/leftbar"></g:render></span>
-						
-					<span class="case"><g:layoutBody/></span>
-				</div>
-			
+		<div id="content">
+			<div class="ligne">
+				<span class = "case"><g:render template="/common/leftbar"></g:render></span>
+					
+				<span class="case"><g:layoutBody/></span>
 			</div>
+		
+		</div>
 
 		<div class="footer" role="contentinfo">
 			<div id="footer" align="center">
