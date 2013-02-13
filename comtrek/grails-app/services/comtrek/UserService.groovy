@@ -14,12 +14,10 @@ import org.springframework.transaction.annotation.Transactional
 
 class UserService {
 
-    def createUser(params) {
-		[userInstance:new User(params)]
-    }
+    User createUser(String firstName, String lastName, String gender, String email, String login, String password, Date birthDate) {
+    User user = new User(firstName : firstName, lastName : lastName, gender : gender, email : email, login : login, password : password, birthDate : birthDate)
+    user.save()
+	user
+  }
 	
-	@Transactional(readOnly = true)
-	def listUsers() {
-		
-	}
 }
