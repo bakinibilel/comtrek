@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="winterfe-877b7f" name="comtrek.TrekControllerSpec" tests="8" time="2.125" timestamp="2013-02-13T21:27:45">
+<testsuite errors="0" failures="0" hostname="Stéven-TOSH" name="comtrek.TrekControllerSpec" tests="8" time="1.529" timestamp="2013-02-13T22:50:36">
   <properties />
-  <testcase classname="comtrek.TrekControllerSpec" name="test trekController index" time="0.625" />
-  <testcase classname="comtrek.TrekControllerSpec" name="test trekController List" time="0.141" />
-  <testcase classname="comtrek.TrekControllerSpec" name="test trekController Create  #Error:expectedInstance" time="0.125" />
-  <testcase classname="comtrek.TrekControllerSpec" name="test trekController Save" time="0.25" />
-  <testcase classname="comtrek.TrekControllerSpec" name="test trekController Show" time="0.219" />
-  <testcase classname="comtrek.TrekControllerSpec" name="test trekController Edit" time="0.125" />
-  <testcase classname="comtrek.TrekControllerSpec" name="test trekController Update" time="0.203" />
-  <testcase classname="comtrek.TrekControllerSpec" name="test trekController Delete" time="0.172" />
+  <testcase classname="comtrek.TrekControllerSpec" name="test trekController index" time="0.452" />
+  <testcase classname="comtrek.TrekControllerSpec" name="test trekController List" time="0.093" />
+  <testcase classname="comtrek.TrekControllerSpec" name="test trekController Create  #Error:expectedInstance" time="0.093" />
+  <testcase classname="comtrek.TrekControllerSpec" name="test trekController Save" time="0.175" />
+  <testcase classname="comtrek.TrekControllerSpec" name="test trekController Show" time="0.193" />
+  <testcase classname="comtrek.TrekControllerSpec" name="test trekController Edit" time="0.099" />
+  <testcase classname="comtrek.TrekControllerSpec" name="test trekController Update" time="0.152" />
+  <testcase classname="comtrek.TrekControllerSpec" name="test trekController Delete" time="0.091" />
   <system-out><![CDATA[--Output from test trekController index--
 url expected : /trek/list , obtained  : /trek/list--Output from test trekController List--
 --Output from test trekController Create  #Error:expectedInstance--

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="winterfe-877b7f" name="comtrek.ParticipantControllerSpec" tests="8" time="2.531" timestamp="2013-02-13T21:27:40">
+<testsuite errors="0" failures="0" hostname="Stéven-TOSH" name="comtrek.ParticipantControllerSpec" tests="8" time="1.436" timestamp="2013-02-13T22:50:33">
   <properties />
-  <testcase classname="comtrek.ParticipantControllerSpec" name="test participantController index" time="1.109" />
-  <testcase classname="comtrek.ParticipantControllerSpec" name="test participantController List" time="0.157" />
-  <testcase classname="comtrek.ParticipantControllerSpec" name="test participantController Create  #Error:expectedInstance" time="0.125" />
-  <testcase classname="comtrek.ParticipantControllerSpec" name="test participantController Save" time="0.172" />
-  <testcase classname="comtrek.ParticipantControllerSpec" name="test participantController Show" time="0.172" />
-  <testcase classname="comtrek.ParticipantControllerSpec" name="test participantController Edit" time="0.141" />
-  <testcase classname="comtrek.ParticipantControllerSpec" name="test participantController Update" time="0.172" />
-  <testcase classname="comtrek.ParticipantControllerSpec" name="test participantController Delete" time="0.203" />
+  <testcase classname="comtrek.ParticipantControllerSpec" name="test participantController index" time="0.459" />
+  <testcase classname="comtrek.ParticipantControllerSpec" name="test participantController List" time="0.125" />
+  <testcase classname="comtrek.ParticipantControllerSpec" name="test participantController Create  #Error:expectedInstance" time="0.091" />
+  <testcase classname="comtrek.ParticipantControllerSpec" name="test participantController Save" time="0.121" />
+  <testcase classname="comtrek.ParticipantControllerSpec" name="test participantController Show" time="0.147" />
+  <testcase classname="comtrek.ParticipantControllerSpec" name="test participantController Edit" time="0.099" />
+  <testcase classname="comtrek.ParticipantControllerSpec" name="test participantController Update" time="0.092" />
+  <testcase classname="comtrek.ParticipantControllerSpec" name="test participantController Delete" time="0.104" />
   <system-out><![CDATA[--Output from test participantController index--
 url expected : /participant/list , obtained  : /participant/list--Output from test participantController List--
 --Output from test participantController Create  #Error:expectedInstance--

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="winterfe-877b7f" name="comtrek.UserControllerUnitSpec" tests="8" time="2.453" timestamp="2013-02-13T21:27:49">
+<testsuite errors="0" failures="0" hostname="Stéven-TOSH" name="comtrek.UserControllerUnitSpec" tests="8" time="1.835" timestamp="2013-02-13T22:50:38">
   <properties />
-  <testcase classname="comtrek.UserControllerUnitSpec" name="test userController index" time="0.672" />
-  <testcase classname="comtrek.UserControllerUnitSpec" name="test userController List" time="0.141" />
-  <testcase classname="comtrek.UserControllerUnitSpec" name="test userController Create  #Error:expectedInstance" time="0.141" />
-  <testcase classname="comtrek.UserControllerUnitSpec" name="test userController Save" time="0.422" />
-  <testcase classname="comtrek.UserControllerUnitSpec" name="test userController Show" time="0.172" />
-  <testcase classname="comtrek.UserControllerUnitSpec" name="test userController Edit" time="0.172" />
-  <testcase classname="comtrek.UserControllerUnitSpec" name="test userController Update" time="0.265" />
-  <testcase classname="comtrek.UserControllerUnitSpec" name="test userController Delete" time="0.157" />
+  <testcase classname="comtrek.UserControllerUnitSpec" name="test userController index" time="0.513" />
+  <testcase classname="comtrek.UserControllerUnitSpec" name="test userController List" time="0.134" />
+  <testcase classname="comtrek.UserControllerUnitSpec" name="test userController Create  #Error:expectedInstance" time="0.142" />
+  <testcase classname="comtrek.UserControllerUnitSpec" name="test userController Save" time="0.323" />
+  <testcase classname="comtrek.UserControllerUnitSpec" name="test userController Show" time="0.138" />
+  <testcase classname="comtrek.UserControllerUnitSpec" name="test userController Edit" time="0.135" />
+  <testcase classname="comtrek.UserControllerUnitSpec" name="test userController Update" time="0.144" />
+  <testcase classname="comtrek.UserControllerUnitSpec" name="test userController Delete" time="0.099" />
   <system-out><![CDATA[--Output from test userController index--
 url expected : /user/list , obtained  : /user/list--Output from test userController List--
 --Output from test userController Create  #Error:expectedInstance--

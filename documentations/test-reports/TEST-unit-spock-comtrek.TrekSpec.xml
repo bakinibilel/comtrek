@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="winterfe-877b7f" name="comtrek.TrekSpec" tests="5" time="1.578" timestamp="2013-02-13T21:27:48">
+<testsuite errors="0" failures="0" hostname="Stéven-TOSH" name="comtrek.TrekSpec" tests="5" time="1.193" timestamp="2013-02-13T22:50:37">
   <properties />
-  <testcase classname="comtrek.TrekSpec" name="test trek all constraints name is size using aaaaaaaaaaaaaaaaaaaaa" time="0.406" />
-  <testcase classname="comtrek.TrekSpec" name="test trek all constraints name is nullable using null" time="0.031" />
-  <testcase classname="comtrek.TrekSpec" name="test trek all constraints name is size using aa" time="0.047" />
-  <testcase classname="comtrek.TrekSpec" name="test trek all constraints level is nullable using null" time="0.047" />
-  <testcase classname="comtrek.TrekSpec" name="test trek all constraints level is nullable using null" time="0.156" />
+  <testcase classname="comtrek.TrekSpec" name="test trek all constraints name is size using aaaaaaaaaaaaaaaaaaaaa" time="0.271" />
+  <testcase classname="comtrek.TrekSpec" name="test trek all constraints name is nullable using null" time="0.043" />
+  <testcase classname="comtrek.TrekSpec" name="test trek all constraints name is size using aa" time="0.042" />
+  <testcase classname="comtrek.TrekSpec" name="test trek all constraints level is nullable using null" time="0.038" />
+  <testcase classname="comtrek.TrekSpec" name="test trek all constraints level is nullable using null" time="0.049" />
   <system-out><![CDATA[--Output from test trek all constraints name is size using aaaaaaaaaaaaaaaaaaaaa--
 --Output from test trek all constraints name is nullable using null--
 --Output from test trek all constraints name is size using aa--

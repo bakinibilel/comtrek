@@ -1,5 +1,5 @@
 Testsuite: comtrek.ParticipantSpec
-Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 2,641 sec
+Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 1,039 sec
 ------------- Standard Output ---------------
 --Output from test Participant all constraints note is range using -1--
 --Output from test Participant all constraints note is range using 11--
@@ -15,8 +15,8 @@ Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 2,641 sec
 --Output from test Participant all constraints note is valid using 2--
 ------------- ---------------- ---------------
 
-Testcase: test Participant all constraints note is range using -1 took 0,375 sec
-Testcase: test Participant all constraints note is range using 11 took 0,047 sec
-Testcase: test Participant all constraints note is valid using 10 took 0,032 sec
-Testcase: test Participant all constraints note is valid using 0 took 0,031 sec
-Testcase: test Participant all constraints note is valid using 2 took 0,031 sec
+Testcase: test Participant all constraints note is range using -1 took 0,271 sec
+Testcase: test Participant all constraints note is range using 11 took 0,032 sec
+Testcase: test Participant all constraints note is valid using 10 took 0,027 sec
+Testcase: test Participant all constraints note is valid using 0 took 0,029 sec
+Testcase: test Participant all constraints note is valid using 2 took 0,03 sec

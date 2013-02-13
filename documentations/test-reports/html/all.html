@@ -18,9 +18,7 @@
                         76
                         tests
                     
-                        with
-                        one error
-                        .
+                        without a single error or failure!
                     </p>
 </div>
 <div class="grid_2 omega">
@@ -43,294 +41,6 @@
 </nav>
 </div>
 <div class="clear"></div>
-<div class="testsuite error">
-<div class="header">
-<h2>UserServiceSpec</h2>
-<h3>
-                        A single test executed
-                    
-                        with
-                        one error
-                        .
-                    </h3>
-</div>
-<div class="testcase clearfix error grid_8 alpha omega" data-name="user create">
-<div class="grid_3 alpha">
-<p>
-<span class="icon error"></span><b class="testname message error">user create</b>
-</p>
-<p class="summary">Executed in 2.422 seconds.</p>
-</div>
-<div class="grid_5 omega outputinfo">
-<div class="details">
-<p>
-<b class="message">could not execute query; SQL [select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query</b>
-</p>
-<pre>org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute query; SQL [select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query
-	at comtrek.UserService.createUser(UserService.groovy:19)
-	at comtrek.UserServiceSpec.user create(UserServiceSpec.groovy:19)
-Caused by: org.hibernate.exception.SQLGrammarException: could not execute query
-Caused by: org.h2.jdbc.JdbcSQLException: Table "USER" not found; SQL statement:
-select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
-	at org.h2.message.DbException.get(DbException.java:169)
-	at org.h2.message.DbException.get(DbException.java:146)
-	at org.h2.command.Parser.readTableOrView(Parser.java:4753)
-	at org.h2.command.Parser.readTableFilter(Parser.java:1080)
-	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:1686)
-	at org.h2.command.Parser.parseSelectSimple(Parser.java:1793)
-	at org.h2.command.Parser.parseSelectSub(Parser.java:1680)
-	at org.h2.command.Parser.parseSelectUnion(Parser.java:1523)
-	at org.h2.command.Parser.parseSelect(Parser.java:1511)
-	at org.h2.command.Parser.parsePrepared(Parser.java:405)
-	at org.h2.command.Parser.parse(Parser.java:279)
-	at org.h2.command.Parser.parse(Parser.java:251)
-	at org.h2.command.Parser.prepareCommand(Parser.java:217)
-	at org.h2.engine.Session.prepareLocal(Session.java:415)
-	at org.h2.engine.Session.prepareCommand(Session.java:364)
-	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1121)
-	at org.h2.jdbc.JdbcPreparedStatement.&lt;init&gt;(JdbcPreparedStatement.java:71)
-	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:267)
-	at org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
-	at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.prepareStatement(PoolingDataSource.java:313)
-</pre>
-</div>
-<div class="details">
-<p>
-<b class="message">could not execute query; SQL [select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query</b>
-</p>
-<pre>org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute query; SQL [select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query
-	at comtrek.UserService.createUser(UserService.groovy:19)
-	at comtrek.UserServiceSpec.user create(UserServiceSpec.groovy:19)
-Caused by: org.hibernate.exception.SQLGrammarException: could not execute query
-Caused by: org.h2.jdbc.JdbcSQLException: Table "USER" not found; SQL statement:
-select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
-	at org.h2.message.DbException.get(DbException.java:169)
-	at org.h2.message.DbException.get(DbException.java:146)
-	at org.h2.command.Parser.readTableOrView(Parser.java:4753)
-	at org.h2.command.Parser.readTableFilter(Parser.java:1080)
-	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:1686)
-	at org.h2.command.Parser.parseSelectSimple(Parser.java:1793)
-	at org.h2.command.Parser.parseSelectSub(Parser.java:1680)
-	at org.h2.command.Parser.parseSelectUnion(Parser.java:1523)
-	at org.h2.command.Parser.parseSelect(Parser.java:1511)
-	at org.h2.command.Parser.parsePrepared(Parser.java:405)
-	at org.h2.command.Parser.parse(Parser.java:279)
-	at org.h2.command.Parser.parse(Parser.java:251)
-	at org.h2.command.Parser.prepareCommand(Parser.java:217)
-	at org.h2.engine.Session.prepareLocal(Session.java:415)
-	at org.h2.engine.Session.prepareCommand(Session.java:364)
-	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1121)
-	at org.h2.jdbc.JdbcPreparedStatement.&lt;init&gt;(JdbcPreparedStatement.java:71)
-	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:267)
-	at org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
-	at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.prepareStatement(PoolingDataSource.java:313)
-</pre>
-</div>
-<div class="details">
-<p>
-<b class="message">could not execute query; SQL [select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query</b>
-</p>
-<pre>org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute query; SQL [select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query
-	at comtrek.UserService.createUser(UserService.groovy:19)
-	at comtrek.UserServiceSpec.user create(UserServiceSpec.groovy:19)
-Caused by: org.hibernate.exception.SQLGrammarException: could not execute query
-Caused by: org.h2.jdbc.JdbcSQLException: Table "USER" not found; SQL statement:
-select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
-	at org.h2.message.DbException.get(DbException.java:169)
-	at org.h2.message.DbException.get(DbException.java:146)
-	at org.h2.command.Parser.readTableOrView(Parser.java:4753)
-	at org.h2.command.Parser.readTableFilter(Parser.java:1080)
-	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:1686)
-	at org.h2.command.Parser.parseSelectSimple(Parser.java:1793)
-	at org.h2.command.Parser.parseSelectSub(Parser.java:1680)
-	at org.h2.command.Parser.parseSelectUnion(Parser.java:1523)
-	at org.h2.command.Parser.parseSelect(Parser.java:1511)
-	at org.h2.command.Parser.parsePrepared(Parser.java:405)
-	at org.h2.command.Parser.parse(Parser.java:279)
-	at org.h2.command.Parser.parse(Parser.java:251)
-	at org.h2.command.Parser.prepareCommand(Parser.java:217)
-	at org.h2.engine.Session.prepareLocal(Session.java:415)
-	at org.h2.engine.Session.prepareCommand(Session.java:364)
-	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1121)
-	at org.h2.jdbc.JdbcPreparedStatement.&lt;init&gt;(JdbcPreparedStatement.java:71)
-	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:267)
-	at org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
-	at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.prepareStatement(PoolingDataSource.java:313)
-</pre>
-</div>
-<div class="details">
-<p>
-<b class="message">could not execute query; SQL [select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query</b>
-</p>
-<pre>org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute query; SQL [select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query
-	at comtrek.UserService.createUser(UserService.groovy:19)
-	at comtrek.UserServiceSpec.user create(UserServiceSpec.groovy:19)
-Caused by: org.hibernate.exception.SQLGrammarException: could not execute query
-Caused by: org.h2.jdbc.JdbcSQLException: Table "USER" not found; SQL statement:
-select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
-	at org.h2.message.DbException.get(DbException.java:169)
-	at org.h2.message.DbException.get(DbException.java:146)
-	at org.h2.command.Parser.readTableOrView(Parser.java:4753)
-	at org.h2.command.Parser.readTableFilter(Parser.java:1080)
-	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:1686)
-	at org.h2.command.Parser.parseSelectSimple(Parser.java:1793)
-	at org.h2.command.Parser.parseSelectSub(Parser.java:1680)
-	at org.h2.command.Parser.parseSelectUnion(Parser.java:1523)
-	at org.h2.command.Parser.parseSelect(Parser.java:1511)
-	at org.h2.command.Parser.parsePrepared(Parser.java:405)
-	at org.h2.command.Parser.parse(Parser.java:279)
-	at org.h2.command.Parser.parse(Parser.java:251)
-	at org.h2.command.Parser.prepareCommand(Parser.java:217)
-	at org.h2.engine.Session.prepareLocal(Session.java:415)
-	at org.h2.engine.Session.prepareCommand(Session.java:364)
-	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1121)
-	at org.h2.jdbc.JdbcPreparedStatement.&lt;init&gt;(JdbcPreparedStatement.java:71)
-	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:267)
-	at org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
-	at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.prepareStatement(PoolingDataSource.java:313)
-</pre>
-</div>
-<div class="details">
-<p>
-<b class="message">could not execute query; SQL [select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query</b>
-</p>
-<pre>org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute query; SQL [select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query
-	at comtrek.UserService.createUser(UserService.groovy:19)
-	at comtrek.UserServiceSpec.user create(UserServiceSpec.groovy:19)
-Caused by: org.hibernate.exception.SQLGrammarException: could not execute query
-Caused by: org.h2.jdbc.JdbcSQLException: Table "USER" not found; SQL statement:
-select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
-	at org.h2.message.DbException.get(DbException.java:169)
-	at org.h2.message.DbException.get(DbException.java:146)
-	at org.h2.command.Parser.readTableOrView(Parser.java:4753)
-	at org.h2.command.Parser.readTableFilter(Parser.java:1080)
-	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:1686)
-	at org.h2.command.Parser.parseSelectSimple(Parser.java:1793)
-	at org.h2.command.Parser.parseSelectSub(Parser.java:1680)
-	at org.h2.command.Parser.parseSelectUnion(Parser.java:1523)
-	at org.h2.command.Parser.parseSelect(Parser.java:1511)
-	at org.h2.command.Parser.parsePrepared(Parser.java:405)
-	at org.h2.command.Parser.parse(Parser.java:279)
-	at org.h2.command.Parser.parse(Parser.java:251)
-	at org.h2.command.Parser.prepareCommand(Parser.java:217)
-	at org.h2.engine.Session.prepareLocal(Session.java:415)
-	at org.h2.engine.Session.prepareCommand(Session.java:364)
-	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1121)
-	at org.h2.jdbc.JdbcPreparedStatement.&lt;init&gt;(JdbcPreparedStatement.java:71)
-	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:267)
-	at org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
-	at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.prepareStatement(PoolingDataSource.java:313)
-</pre>
-</div>
-<div class="details">
-<p>
-<b class="message">could not execute query; SQL [select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query</b>
-</p>
-<pre>org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute query; SQL [select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query
-	at comtrek.UserService.createUser(UserService.groovy:19)
-	at comtrek.UserServiceSpec.user create(UserServiceSpec.groovy:19)
-Caused by: org.hibernate.exception.SQLGrammarException: could not execute query
-Caused by: org.h2.jdbc.JdbcSQLException: Table "USER" not found; SQL statement:
-select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
-	at org.h2.message.DbException.get(DbException.java:169)
-	at org.h2.message.DbException.get(DbException.java:146)
-	at org.h2.command.Parser.readTableOrView(Parser.java:4753)
-	at org.h2.command.Parser.readTableFilter(Parser.java:1080)
-	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:1686)
-	at org.h2.command.Parser.parseSelectSimple(Parser.java:1793)
-	at org.h2.command.Parser.parseSelectSub(Parser.java:1680)
-	at org.h2.command.Parser.parseSelectUnion(Parser.java:1523)
-	at org.h2.command.Parser.parseSelect(Parser.java:1511)
-	at org.h2.command.Parser.parsePrepared(Parser.java:405)
-	at org.h2.command.Parser.parse(Parser.java:279)
-	at org.h2.command.Parser.parse(Parser.java:251)
-	at org.h2.command.Parser.prepareCommand(Parser.java:217)
-	at org.h2.engine.Session.prepareLocal(Session.java:415)
-	at org.h2.engine.Session.prepareCommand(Session.java:364)
-	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1121)
-	at org.h2.jdbc.JdbcPreparedStatement.&lt;init&gt;(JdbcPreparedStatement.java:71)
-	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:267)
-	at org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
-	at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.prepareStatement(PoolingDataSource.java:313)
-</pre>
-</div>
-<div class="details">
-<p>
-<b class="message">could not execute query; SQL [select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query</b>
-</p>
-<pre>org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute query; SQL [select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query
-	at comtrek.UserService.createUser(UserService.groovy:19)
-	at comtrek.UserServiceSpec.user create(UserServiceSpec.groovy:19)
-Caused by: org.hibernate.exception.SQLGrammarException: could not execute query
-Caused by: org.h2.jdbc.JdbcSQLException: Table "USER" not found; SQL statement:
-select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
-	at org.h2.message.DbException.get(DbException.java:169)
-	at org.h2.message.DbException.get(DbException.java:146)
-	at org.h2.command.Parser.readTableOrView(Parser.java:4753)
-	at org.h2.command.Parser.readTableFilter(Parser.java:1080)
-	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:1686)
-	at org.h2.command.Parser.parseSelectSimple(Parser.java:1793)
-	at org.h2.command.Parser.parseSelectSub(Parser.java:1680)
-	at org.h2.command.Parser.parseSelectUnion(Parser.java:1523)
-	at org.h2.command.Parser.parseSelect(Parser.java:1511)
-	at org.h2.command.Parser.parsePrepared(Parser.java:405)
-	at org.h2.command.Parser.parse(Parser.java:279)
-	at org.h2.command.Parser.parse(Parser.java:251)
-	at org.h2.command.Parser.prepareCommand(Parser.java:217)
-	at org.h2.engine.Session.prepareLocal(Session.java:415)
-	at org.h2.engine.Session.prepareCommand(Session.java:364)
-	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1121)
-	at org.h2.jdbc.JdbcPreparedStatement.&lt;init&gt;(JdbcPreparedStatement.java:71)
-	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:267)
-	at org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
-	at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.prepareStatement(PoolingDataSource.java:313)
-</pre>
-</div>
-</div>
-<div class="clear"></div>
-</div>
-<div class="clearfix output footer">
-<div class="sysout">
-<h2>Standard output</h2>
-<pre class="stdout">--Output from user create--
-</pre>
-</div>
-<div class="syserr">
-<h2>System error</h2>
-<pre class="syserr">--Output from user create--
-2013-02-13 22:28:27,187 [main] ERROR util.JDBCExceptionReporter  - Table "USER" not found; SQL statement:
-select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
-
-2013-02-13 22:28:27,578 [main] ERROR util.JDBCExceptionReporter  - Table "USER" not found; SQL statement:
-select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
-
-2013-02-13 22:28:27,734 [main] ERROR util.JDBCExceptionReporter  - Table "USER" not found; SQL statement:
-select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
-
-2013-02-13 22:28:27,812 [main] ERROR util.JDBCExceptionReporter  - Table "USER" not found; SQL statement:
-select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
-
-2013-02-13 22:28:28,078 [main] ERROR util.JDBCExceptionReporter  - Table "USER" not found; SQL statement:
-select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
-
-2013-02-13 22:28:28,187 [main] ERROR util.JDBCExceptionReporter  - Table "USER" not found; SQL statement:
-select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
-
-2013-02-13 22:28:28,281 [main] ERROR util.JDBCExceptionReporter  - Table "USER" not found; SQL statement:
-select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
-
-</pre>
-</div>
-</div>
-<div class="clear"></div>
-</div>
 <div class="testsuite success">
 <div class="header">
 <h2>CommentControllerUnitSpec</h2>
@@ -347,7 +57,7 @@ select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birt
 <p>
 <span class="icon success"></span><b class="testname message success">test commentController index</b>
 </p>
-<p class="summary">Executed in 4.156 seconds.</p>
+<p class="summary">Executed in 3.03 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -357,7 +67,7 @@ select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birt
 <p>
 <span class="icon success"></span><b class="testname message success">test commentController List</b>
 </p>
-<p class="summary">Executed in 1.922 seconds.</p>
+<p class="summary">Executed in 1.125 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -367,7 +77,7 @@ select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birt
 <p>
 <span class="icon success"></span><b class="testname message success">test commentController Create  #Error:expectedInstance</b>
 </p>
-<p class="summary">Executed in 0.265 seconds.</p>
+<p class="summary">Executed in 0.193 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -377,7 +87,7 @@ select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birt
 <p>
 <span class="icon success"></span><b class="testname message success">test commentController Save</b>
 </p>
-<p class="summary">Executed in 0.907 seconds.</p>
+<p class="summary">Executed in 0.703 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -387,7 +97,7 @@ select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birt
 <p>
 <span class="icon success"></span><b class="testname message success">test commentController Show</b>
 </p>
-<p class="summary">Executed in 0.187 seconds.</p>
+<p class="summary">Executed in 0.154 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -397,7 +107,7 @@ select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birt
 <p>
 <span class="icon success"></span><b class="testname message success">test commentController Edit</b>
 </p>
-<p class="summary">Executed in 0.172 seconds.</p>
+<p class="summary">Executed in 0.117 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -407,7 +117,7 @@ select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birt
 <p>
 <span class="icon success"></span><b class="testname message success">test commentController Update</b>
 </p>
-<p class="summary">Executed in 0.422 seconds.</p>
+<p class="summary">Executed in 0.193 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -417,7 +127,7 @@ select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birt
 <p>
 <span class="icon success"></span><b class="testname message success">test commentController Delete</b>
 </p>
-<p class="summary">Executed in 0.203 seconds.</p>
+<p class="summary">Executed in 0.134 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -466,7 +176,7 @@ url expected : /comment/list , obtained  : /comment/list--Output from test comme
 <p>
 <span class="icon success"></span><b class="testname message success">test Comment all constraints comment is size using 2</b>
 </p>
-<p class="summary">Executed in 0.765 seconds.</p>
+<p class="summary">Executed in 0.711 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -476,7 +186,7 @@ url expected : /comment/list , obtained  : /comment/list--Output from test comme
 <p>
 <span class="icon success"></span><b class="testname message success">test Comment all constraints comment is size using 31</b>
 </p>
-<p class="summary">Executed in 0.047 seconds.</p>
+<p class="summary">Executed in 0.042 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -486,7 +196,7 @@ url expected : /comment/list , obtained  : /comment/list--Output from test comme
 <p>
 <span class="icon success"></span><b class="testname message success">test Comment all constraints writing_date is nullable using null</b>
 </p>
-<p class="summary">Executed in 0.047 seconds.</p>
+<p class="summary">Executed in 0.039 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -525,7 +235,7 @@ url expected : /comment/list , obtained  : /comment/list--Output from test comme
 <p>
 <span class="icon success"></span><b class="testname message success">test eventController index</b>
 </p>
-<p class="summary">Executed in 0.641 seconds.</p>
+<p class="summary">Executed in 0.626 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -535,7 +245,7 @@ url expected : /comment/list , obtained  : /comment/list--Output from test comme
 <p>
 <span class="icon success"></span><b class="testname message success">test eventController List</b>
 </p>
-<p class="summary">Executed in 0.157 seconds.</p>
+<p class="summary">Executed in 0.163 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -545,7 +255,7 @@ url expected : /comment/list , obtained  : /comment/list--Output from test comme
 <p>
 <span class="icon success"></span><b class="testname message success">test eventController Create  #Error:expectedInstance</b>
 </p>
-<p class="summary">Executed in 0.156 seconds.</p>
+<p class="summary">Executed in 0.142 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -555,7 +265,7 @@ url expected : /comment/list , obtained  : /comment/list--Output from test comme
 <p>
 <span class="icon success"></span><b class="testname message success">test eventController Save</b>
 </p>
-<p class="summary">Executed in 0.266 seconds.</p>
+<p class="summary">Executed in 0.219 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -565,7 +275,7 @@ url expected : /comment/list , obtained  : /comment/list--Output from test comme
 <p>
 <span class="icon success"></span><b class="testname message success">test eventController Show</b>
 </p>
-<p class="summary">Executed in 0.218 seconds.</p>
+<p class="summary">Executed in 0.182 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -575,7 +285,7 @@ url expected : /comment/list , obtained  : /comment/list--Output from test comme
 <p>
 <span class="icon success"></span><b class="testname message success">test eventController Edit</b>
 </p>
-<p class="summary">Executed in 0.157 seconds.</p>
+<p class="summary">Executed in 0.126 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -585,7 +295,7 @@ url expected : /comment/list , obtained  : /comment/list--Output from test comme
 <p>
 <span class="icon success"></span><b class="testname message success">test eventController Update</b>
 </p>
-<p class="summary">Executed in 0.218 seconds.</p>
+<p class="summary">Executed in 0.164 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -595,7 +305,7 @@ url expected : /comment/list , obtained  : /comment/list--Output from test comme
 <p>
 <span class="icon success"></span><b class="testname message success">test eventController Delete</b>
 </p>
-<p class="summary">Executed in 0.25 seconds.</p>
+<p class="summary">Executed in 0.144 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -644,7 +354,7 @@ url expected : /event/list , obtained  : /event/list--Output from test eventCont
 <p>
 <span class="icon success"></span><b class="testname message success">test Event all constraints averageNote is range using -1</b>
 </p>
-<p class="summary">Executed in 0.5 seconds.</p>
+<p class="summary">Executed in 0.304 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -654,7 +364,7 @@ url expected : /event/list , obtained  : /event/list--Output from test eventCont
 <p>
 <span class="icon success"></span><b class="testname message success">test Event all constraints averageNote is range using 11</b>
 </p>
-<p class="summary">Executed in 0.109 seconds.</p>
+<p class="summary">Executed in 0.043 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -664,7 +374,7 @@ url expected : /event/list , obtained  : /event/list--Output from test eventCont
 <p>
 <span class="icon success"></span><b class="testname message success">test Event all constraints effectiveTime is nullable using null</b>
 </p>
-<p class="summary">Executed in 0.172 seconds.</p>
+<p class="summary">Executed in 0.044 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -703,7 +413,7 @@ url expected : /event/list , obtained  : /event/list--Output from test eventCont
 <p>
 <span class="icon success"></span><b class="testname message success">test participantController index</b>
 </p>
-<p class="summary">Executed in 1.109 seconds.</p>
+<p class="summary">Executed in 0.459 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -713,7 +423,7 @@ url expected : /event/list , obtained  : /event/list--Output from test eventCont
 <p>
 <span class="icon success"></span><b class="testname message success">test participantController List</b>
 </p>
-<p class="summary">Executed in 0.157 seconds.</p>
+<p class="summary">Executed in 0.125 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -723,7 +433,7 @@ url expected : /event/list , obtained  : /event/list--Output from test eventCont
 <p>
 <span class="icon success"></span><b class="testname message success">test participantController Create  #Error:expectedInstance</b>
 </p>
-<p class="summary">Executed in 0.125 seconds.</p>
+<p class="summary">Executed in 0.091 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -733,7 +443,7 @@ url expected : /event/list , obtained  : /event/list--Output from test eventCont
 <p>
 <span class="icon success"></span><b class="testname message success">test participantController Save</b>
 </p>
-<p class="summary">Executed in 0.172 seconds.</p>
+<p class="summary">Executed in 0.121 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -743,7 +453,7 @@ url expected : /event/list , obtained  : /event/list--Output from test eventCont
 <p>
 <span class="icon success"></span><b class="testname message success">test participantController Show</b>
 </p>
-<p class="summary">Executed in 0.172 seconds.</p>
+<p class="summary">Executed in 0.147 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -753,7 +463,7 @@ url expected : /event/list , obtained  : /event/list--Output from test eventCont
 <p>
 <span class="icon success"></span><b class="testname message success">test participantController Edit</b>
 </p>
-<p class="summary">Executed in 0.141 seconds.</p>
+<p class="summary">Executed in 0.099 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -763,7 +473,7 @@ url expected : /event/list , obtained  : /event/list--Output from test eventCont
 <p>
 <span class="icon success"></span><b class="testname message success">test participantController Update</b>
 </p>
-<p class="summary">Executed in 0.172 seconds.</p>
+<p class="summary">Executed in 0.092 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -773,7 +483,7 @@ url expected : /event/list , obtained  : /event/list--Output from test eventCont
 <p>
 <span class="icon success"></span><b class="testname message success">test participantController Delete</b>
 </p>
-<p class="summary">Executed in 0.203 seconds.</p>
+<p class="summary">Executed in 0.104 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -822,7 +532,7 @@ url expected : /participant/list , obtained  : /participant/list--Output from te
 <p>
 <span class="icon success"></span><b class="testname message success">test Participant all constraints note is range using -1</b>
 </p>
-<p class="summary">Executed in 0.375 seconds.</p>
+<p class="summary">Executed in 0.271 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -832,7 +542,7 @@ url expected : /participant/list , obtained  : /participant/list--Output from te
 <p>
 <span class="icon success"></span><b class="testname message success">test Participant all constraints note is range using 11</b>
 </p>
-<p class="summary">Executed in 0.047 seconds.</p>
+<p class="summary">Executed in 0.032 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -842,7 +552,7 @@ url expected : /participant/list , obtained  : /participant/list--Output from te
 <p>
 <span class="icon success"></span><b class="testname message success">test Participant all constraints note is valid using 10</b>
 </p>
-<p class="summary">Executed in 0.032 seconds.</p>
+<p class="summary">Executed in 0.027 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -852,7 +562,7 @@ url expected : /participant/list , obtained  : /participant/list--Output from te
 <p>
 <span class="icon success"></span><b class="testname message success">test Participant all constraints note is valid using 0</b>
 </p>
-<p class="summary">Executed in 0.031 seconds.</p>
+<p class="summary">Executed in 0.029 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -862,7 +572,7 @@ url expected : /participant/list , obtained  : /participant/list--Output from te
 <p>
 <span class="icon success"></span><b class="testname message success">test Participant all constraints note is valid using 2</b>
 </p>
-<p class="summary">Executed in 0.031 seconds.</p>
+<p class="summary">Executed in 0.03 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -905,7 +615,7 @@ url expected : /participant/list , obtained  : /participant/list--Output from te
 <p>
 <span class="icon success"></span><b class="testname message success">test trekController index</b>
 </p>
-<p class="summary">Executed in 0.625 seconds.</p>
+<p class="summary">Executed in 0.452 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -915,7 +625,7 @@ url expected : /participant/list , obtained  : /participant/list--Output from te
 <p>
 <span class="icon success"></span><b class="testname message success">test trekController List</b>
 </p>
-<p class="summary">Executed in 0.141 seconds.</p>
+<p class="summary">Executed in 0.093 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -925,7 +635,7 @@ url expected : /participant/list , obtained  : /participant/list--Output from te
 <p>
 <span class="icon success"></span><b class="testname message success">test trekController Create  #Error:expectedInstance</b>
 </p>
-<p class="summary">Executed in 0.125 seconds.</p>
+<p class="summary">Executed in 0.093 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -935,7 +645,7 @@ url expected : /participant/list , obtained  : /participant/list--Output from te
 <p>
 <span class="icon success"></span><b class="testname message success">test trekController Save</b>
 </p>
-<p class="summary">Executed in 0.25 seconds.</p>
+<p class="summary">Executed in 0.175 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -945,7 +655,7 @@ url expected : /participant/list , obtained  : /participant/list--Output from te
 <p>
 <span class="icon success"></span><b class="testname message success">test trekController Show</b>
 </p>
-<p class="summary">Executed in 0.219 seconds.</p>
+<p class="summary">Executed in 0.193 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -955,7 +665,7 @@ url expected : /participant/list , obtained  : /participant/list--Output from te
 <p>
 <span class="icon success"></span><b class="testname message success">test trekController Edit</b>
 </p>
-<p class="summary">Executed in 0.125 seconds.</p>
+<p class="summary">Executed in 0.099 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -965,7 +675,7 @@ url expected : /participant/list , obtained  : /participant/list--Output from te
 <p>
 <span class="icon success"></span><b class="testname message success">test trekController Update</b>
 </p>
-<p class="summary">Executed in 0.203 seconds.</p>
+<p class="summary">Executed in 0.152 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -975,7 +685,7 @@ url expected : /participant/list , obtained  : /participant/list--Output from te
 <p>
 <span class="icon success"></span><b class="testname message success">test trekController Delete</b>
 </p>
-<p class="summary">Executed in 0.172 seconds.</p>
+<p class="summary">Executed in 0.091 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -1024,7 +734,7 @@ url expected : /trek/list , obtained  : /trek/list--Output from test trekControl
 <p>
 <span class="icon success"></span><b class="testname message success">test trek all constraints name is size using aaaaaaaaaaaaaaaaaaaaa</b>
 </p>
-<p class="summary">Executed in 0.406 seconds.</p>
+<p class="summary">Executed in 0.271 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -1034,7 +744,7 @@ url expected : /trek/list , obtained  : /trek/list--Output from test trekControl
 <p>
 <span class="icon success"></span><b class="testname message success">test trek all constraints name is nullable using null</b>
 </p>
-<p class="summary">Executed in 0.031 seconds.</p>
+<p class="summary">Executed in 0.043 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -1044,7 +754,7 @@ url expected : /trek/list , obtained  : /trek/list--Output from test trekControl
 <p>
 <span class="icon success"></span><b class="testname message success">test trek all constraints name is size using aa</b>
 </p>
-<p class="summary">Executed in 0.047 seconds.</p>
+<p class="summary">Executed in 0.042 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -1054,7 +764,7 @@ url expected : /trek/list , obtained  : /trek/list--Output from test trekControl
 <p>
 <span class="icon success"></span><b class="testname message success">test trek all constraints level is nullable using null</b>
 </p>
-<p class="summary">Executed in 0.047 seconds.</p>
+<p class="summary">Executed in 0.038 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -1064,7 +774,7 @@ url expected : /trek/list , obtained  : /trek/list--Output from test trekControl
 <p>
 <span class="icon success"></span><b class="testname message success">test trek all constraints level is nullable using null</b>
 </p>
-<p class="summary">Executed in 0.156 seconds.</p>
+<p class="summary">Executed in 0.049 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -1107,7 +817,7 @@ url expected : /trek/list , obtained  : /trek/list--Output from test trekControl
 <p>
 <span class="icon success"></span><b class="testname message success">test userController index</b>
 </p>
-<p class="summary">Executed in 0.672 seconds.</p>
+<p class="summary">Executed in 0.513 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -1117,7 +827,7 @@ url expected : /trek/list , obtained  : /trek/list--Output from test trekControl
 <p>
 <span class="icon success"></span><b class="testname message success">test userController List</b>
 </p>
-<p class="summary">Executed in 0.141 seconds.</p>
+<p class="summary">Executed in 0.134 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -1127,7 +837,7 @@ url expected : /trek/list , obtained  : /trek/list--Output from test trekControl
 <p>
 <span class="icon success"></span><b class="testname message success">test userController Create  #Error:expectedInstance</b>
 </p>
-<p class="summary">Executed in 0.141 seconds.</p>
+<p class="summary">Executed in 0.142 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -1137,7 +847,7 @@ url expected : /trek/list , obtained  : /trek/list--Output from test trekControl
 <p>
 <span class="icon success"></span><b class="testname message success">test userController Save</b>
 </p>
-<p class="summary">Executed in 0.422 seconds.</p>
+<p class="summary">Executed in 0.323 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -1147,7 +857,7 @@ url expected : /trek/list , obtained  : /trek/list--Output from test trekControl
 <p>
 <span class="icon success"></span><b class="testname message success">test userController Show</b>
 </p>
-<p class="summary">Executed in 0.172 seconds.</p>
+<p class="summary">Executed in 0.138 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -1157,7 +867,7 @@ url expected : /trek/list , obtained  : /trek/list--Output from test trekControl
 <p>
 <span class="icon success"></span><b class="testname message success">test userController Edit</b>
 </p>
-<p class="summary">Executed in 0.172 seconds.</p>
+<p class="summary">Executed in 0.135 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -1167,7 +877,7 @@ url expected : /trek/list , obtained  : /trek/list--Output from test trekControl
 <p>
 <span class="icon success"></span><b class="testname message success">test userController Update</b>
 </p>
-<p class="summary">Executed in 0.265 seconds.</p>
+<p class="summary">Executed in 0.144 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -1177,7 +887,7 @@ url expected : /trek/list , obtained  : /trek/list--Output from test trekControl
 <p>
 <span class="icon success"></span><b class="testname message success">test userController Delete</b>
 </p>
-<p class="summary">Executed in 0.157 seconds.</p>
+<p class="summary">Executed in 0.099 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -1212,6 +922,39 @@ url expected : /user/list , obtained  : /user/list--Output from test userControl
 </div>
 <div class="testsuite success">
 <div class="header">
+<h2>UserServiceSpec</h2>
+<h3>
+                        A single test executed
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="user create">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">user create</b>
+</p>
+<p class="summary">Executed in 0.917 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from user create--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from user create--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
 <h2>UserSpec</h2>
 <h3>
                         Executed
@@ -1226,7 +969,7 @@ url expected : /user/list , obtained  : /user/list--Output from test userControl
 <p>
 <span class="icon success"></span><b class="testname message success">test user all constraints firstName is size using aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</b>
 </p>
-<p class="summary">Executed in 0.5 seconds.</p>
+<p class="summary">Executed in 0.423 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -1236,7 +979,7 @@ url expected : /user/list , obtained  : /user/list--Output from test userControl
 <p>
 <span class="icon success"></span><b class="testname message success">test user all constraints firstName is nullable using null</b>
 </p>
-<p class="summary">Executed in 0.047 seconds.</p>
+<p class="summary">Executed in 0.036 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -1246,7 +989,7 @@ url expected : /user/list , obtained  : /user/list--Output from test userControl
 <p>
 <span class="icon success"></span><b class="testname message success">test user all constraints lastName is size using aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</b>
 </p>
-<p class="summary">Executed in 0.047 seconds.</p>
+<p class="summary">Executed in 0.036 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -1256,7 +999,7 @@ url expected : /user/list , obtained  : /user/list--Output from test userControl
 <p>
 <span class="icon success"></span><b class="testname message success">test user all constraints lastName is nullable using null</b>
 </p>
-<p class="summary">Executed in 0.047 seconds.</p>
+<p class="summary">Executed in 0.032 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -1266,7 +1009,7 @@ url expected : /user/list , obtained  : /user/list--Output from test userControl
 <p>
 <span class="icon success"></span><b class="testname message success">test user all constraints email is email using testFaux@Faux</b>
 </p>
-<p class="summary">Executed in 0.047 seconds.</p>
+<p class="summary">Executed in 0.035 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -1276,17 +1019,17 @@ url expected : /user/list , obtained  : /user/list--Output from test userControl
 <p>
 <span class="icon success"></span><b class="testname message success">test user all constraints gender is inList using Unknown</b>
 </p>
-<p class="summary">Executed in 0.031 seconds.</p>
+<p class="summary">Executed in 0.109 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
 </div>
-<div class="testcase clearfix success grid_8 alpha omega" data-name="test user all constraints birthDate is max using Thu Feb 14 22:27:52 CET 2013">
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test user all constraints birthDate is max using Thu Feb 14 23:50:40 CET 2013">
 <div class="grid_3 alpha">
 <p>
-<span class="icon success"></span><b class="testname message success">test user all constraints birthDate is max using Thu Feb 14 22:27:52 CET 2013</b>
+<span class="icon success"></span><b class="testname message success">test user all constraints birthDate is max using Thu Feb 14 23:50:40 CET 2013</b>
 </p>
-<p class="summary">Executed in 0.047 seconds.</p>
+<p class="summary">Executed in 0.041 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -1296,7 +1039,7 @@ url expected : /user/list , obtained  : /user/list--Output from test userControl
 <p>
 <span class="icon success"></span><b class="testname message success">test user all constraints password is nullable using null</b>
 </p>
-<p class="summary">Executed in 0.063 seconds.</p>
+<p class="summary">Executed in 0.073 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -1306,7 +1049,7 @@ url expected : /user/list , obtained  : /user/list--Output from test userControl
 <p>
 <span class="icon success"></span><b class="testname message success">test user all constraints login is nullable using null</b>
 </p>
-<p class="summary">Executed in 0.047 seconds.</p>
+<p class="summary">Executed in 0.052 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -1316,17 +1059,17 @@ url expected : /user/list , obtained  : /user/list--Output from test userControl
 <p>
 <span class="icon success"></span><b class="testname message success">User birthDate is nullable using null</b>
 </p>
-<p class="summary">Executed in 0.047 seconds.</p>
+<p class="summary">Executed in 0.049 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
 </div>
-<div class="testcase clearfix success grid_8 alpha omega" data-name="User birthDate is valid using Tue Feb 12 22:27:53 CET 2013">
+<div class="testcase clearfix success grid_8 alpha omega" data-name="User birthDate is valid using Tue Feb 12 23:50:41 CET 2013">
 <div class="grid_3 alpha">
 <p>
-<span class="icon success"></span><b class="testname message success">User birthDate is valid using Tue Feb 12 22:27:53 CET 2013</b>
+<span class="icon success"></span><b class="testname message success">User birthDate is valid using Tue Feb 12 23:50:41 CET 2013</b>
 </p>
-<p class="summary">Executed in 0.031 seconds.</p>
+<p class="summary">Executed in 0.033 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -1336,7 +1079,7 @@ url expected : /user/list , obtained  : /user/list--Output from test userControl
 <p>
 <span class="icon success"></span><b class="testname message success">user gender is inList using Unknown</b>
 </p>
-<p class="summary">Executed in 0.047 seconds.</p>
+<p class="summary">Executed in 0.041 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -1346,7 +1089,7 @@ url expected : /user/list , obtained  : /user/list--Output from test userControl
 <p>
 <span class="icon success"></span><b class="testname message success">user gender is nullable using null</b>
 </p>
-<p class="summary">Executed in 0.047 seconds.</p>
+<p class="summary">Executed in 0.033 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -1356,7 +1099,7 @@ url expected : /user/list , obtained  : /user/list--Output from test userControl
 <p>
 <span class="icon success"></span><b class="testname message success">user gender is valid using </b>
 </p>
-<p class="summary">Executed in 0.046 seconds.</p>
+<p class="summary">Executed in 0.034 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -1366,7 +1109,7 @@ url expected : /user/list , obtained  : /user/list--Output from test userControl
 <p>
 <span class="icon success"></span><b class="testname message success">user gender is valid using Male</b>
 </p>
-<p class="summary">Executed in 0.032 seconds.</p>
+<p class="summary">Executed in 0.03 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -1376,7 +1119,7 @@ url expected : /user/list , obtained  : /user/list--Output from test userControl
 <p>
 <span class="icon success"></span><b class="testname message success">user gender is valid using Female</b>
 </p>
-<p class="summary">Executed in 0.047 seconds.</p>
+<p class="summary">Executed in 0.04 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -1386,7 +1129,7 @@ url expected : /user/list , obtained  : /user/list--Output from test userControl
 <p>
 <span class="icon success"></span><b class="testname message success">user login is nullable using null</b>
 </p>
-<p class="summary">Executed in 0.078 seconds.</p>
+<p class="summary">Executed in 0.039 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -1396,7 +1139,7 @@ url expected : /user/list , obtained  : /user/list--Output from test userControl
 <p>
 <span class="icon success"></span><b class="testname message success">user login is valid using bobafet</b>
 </p>
-<p class="summary">Executed in 0.047 seconds.</p>
+<p class="summary">Executed in 0.034 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -1406,7 +1149,7 @@ url expected : /user/list , obtained  : /user/list--Output from test userControl
 <p>
 <span class="icon success"></span><b class="testname message success">user login is valid using bobajunior</b>
 </p>
-<p class="summary">Executed in 0.046 seconds.</p>
+<p class="summary">Executed in 0.038 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -1420,11 +1163,11 @@ url expected : /user/list , obtained  : /user/list--Output from test userControl
 --Output from test user all constraints lastName is nullable using null--
 --Output from test user all constraints email is email using testFaux@Faux--
 --Output from test user all constraints gender is inList using Unknown--
---Output from test user all constraints birthDate is max using Thu Feb 14 22:27:52 CET 2013--
+--Output from test user all constraints birthDate is max using Thu Feb 14 23:50:40 CET 2013--
 --Output from test user all constraints password is nullable using null--
 --Output from test user all constraints login is nullable using null--
 --Output from User birthDate is nullable using null--
---Output from User birthDate is valid using Tue Feb 12 22:27:53 CET 2013--
+--Output from User birthDate is valid using Tue Feb 12 23:50:41 CET 2013--
 --Output from user gender is inList using Unknown--
 --Output from user gender is nullable using null--
 --Output from user gender is valid using --
@@ -1443,11 +1186,11 @@ url expected : /user/list , obtained  : /user/list--Output from test userControl
 --Output from test user all constraints lastName is nullable using null--
 --Output from test user all constraints email is email using testFaux@Faux--
 --Output from test user all constraints gender is inList using Unknown--
---Output from test user all constraints birthDate is max using Thu Feb 14 22:27:52 CET 2013--
+--Output from test user all constraints birthDate is max using Thu Feb 14 23:50:40 CET 2013--
 --Output from test user all constraints password is nullable using null--
 --Output from test user all constraints login is nullable using null--
 --Output from User birthDate is nullable using null--
---Output from User birthDate is valid using Tue Feb 12 22:27:53 CET 2013--
+--Output from User birthDate is valid using Tue Feb 12 23:50:41 CET 2013--
 --Output from user gender is inList using Unknown--
 --Output from user gender is nullable using null--
 --Output from user gender is valid using --

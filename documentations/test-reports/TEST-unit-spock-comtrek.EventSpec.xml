@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="winterfe-877b7f" name="comtrek.EventSpec" tests="3" time="1.922" timestamp="2013-02-13T21:27:38">
+<testsuite errors="0" failures="0" hostname="Stéven-TOSH" name="comtrek.EventSpec" tests="3" time="1.053" timestamp="2013-02-13T22:50:32">
   <properties />
-  <testcase classname="comtrek.EventSpec" name="test Event all constraints averageNote is range using -1" time="0.5" />
-  <testcase classname="comtrek.EventSpec" name="test Event all constraints averageNote is range using 11" time="0.109" />
-  <testcase classname="comtrek.EventSpec" name="test Event all constraints effectiveTime is nullable using null" time="0.172" />
+  <testcase classname="comtrek.EventSpec" name="test Event all constraints averageNote is range using -1" time="0.304" />
+  <testcase classname="comtrek.EventSpec" name="test Event all constraints averageNote is range using 11" time="0.043" />
+  <testcase classname="comtrek.EventSpec" name="test Event all constraints effectiveTime is nullable using null" time="0.044" />
   <system-out><![CDATA[--Output from test Event all constraints averageNote is range using -1--
 --Output from test Event all constraints averageNote is range using 11--
 --Output from test Event all constraints effectiveTime is nullable using null--

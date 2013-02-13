@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="winterfe-877b7f" name="comtrek.EventControllerUnitSpec" tests="8" time="2.531" timestamp="2013-02-13T21:27:35">
+<testsuite errors="0" failures="0" hostname="Stéven-TOSH" name="comtrek.EventControllerUnitSpec" tests="8" time="2.037" timestamp="2013-02-13T22:50:30">
   <properties />
-  <testcase classname="comtrek.EventControllerUnitSpec" name="test eventController index" time="0.641" />
-  <testcase classname="comtrek.EventControllerUnitSpec" name="test eventController List" time="0.157" />
-  <testcase classname="comtrek.EventControllerUnitSpec" name="test eventController Create  #Error:expectedInstance" time="0.156" />
-  <testcase classname="comtrek.EventControllerUnitSpec" name="test eventController Save" time="0.266" />
-  <testcase classname="comtrek.EventControllerUnitSpec" name="test eventController Show" time="0.218" />
-  <testcase classname="comtrek.EventControllerUnitSpec" name="test eventController Edit" time="0.157" />
-  <testcase classname="comtrek.EventControllerUnitSpec" name="test eventController Update" time="0.218" />
-  <testcase classname="comtrek.EventControllerUnitSpec" name="test eventController Delete" time="0.25" />
+  <testcase classname="comtrek.EventControllerUnitSpec" name="test eventController index" time="0.626" />
+  <testcase classname="comtrek.EventControllerUnitSpec" name="test eventController List" time="0.163" />
+  <testcase classname="comtrek.EventControllerUnitSpec" name="test eventController Create  #Error:expectedInstance" time="0.142" />
+  <testcase classname="comtrek.EventControllerUnitSpec" name="test eventController Save" time="0.219" />
+  <testcase classname="comtrek.EventControllerUnitSpec" name="test eventController Show" time="0.182" />
+  <testcase classname="comtrek.EventControllerUnitSpec" name="test eventController Edit" time="0.126" />
+  <testcase classname="comtrek.EventControllerUnitSpec" name="test eventController Update" time="0.164" />
+  <testcase classname="comtrek.EventControllerUnitSpec" name="test eventController Delete" time="0.144" />
   <system-out><![CDATA[--Output from test eventController index--
 url expected : /event/list , obtained  : /event/list--Output from test eventController List--
 --Output from test eventController Create  #Error:expectedInstance--

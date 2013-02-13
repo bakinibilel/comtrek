@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="winterfe-877b7f" name="comtrek.CommentControllerUnitSpec" tests="8" time="8.547" timestamp="2013-02-13T21:27:25">
+<testsuite errors="0" failures="0" hostname="Stéven-TOSH" name="comtrek.CommentControllerUnitSpec" tests="8" time="5.854" timestamp="2013-02-13T22:50:23">
   <properties />
-  <testcase classname="comtrek.CommentControllerUnitSpec" name="test commentController index" time="4.156" />
-  <testcase classname="comtrek.CommentControllerUnitSpec" name="test commentController List" time="1.922" />
-  <testcase classname="comtrek.CommentControllerUnitSpec" name="test commentController Create  #Error:expectedInstance" time="0.265" />
-  <testcase classname="comtrek.CommentControllerUnitSpec" name="test commentController Save" time="0.907" />
-  <testcase classname="comtrek.CommentControllerUnitSpec" name="test commentController Show" time="0.187" />
-  <testcase classname="comtrek.CommentControllerUnitSpec" name="test commentController Edit" time="0.172" />
-  <testcase classname="comtrek.CommentControllerUnitSpec" name="test commentController Update" time="0.422" />
-  <testcase classname="comtrek.CommentControllerUnitSpec" name="test commentController Delete" time="0.203" />
+  <testcase classname="comtrek.CommentControllerUnitSpec" name="test commentController index" time="3.03" />
+  <testcase classname="comtrek.CommentControllerUnitSpec" name="test commentController List" time="1.125" />
+  <testcase classname="comtrek.CommentControllerUnitSpec" name="test commentController Create  #Error:expectedInstance" time="0.193" />
+  <testcase classname="comtrek.CommentControllerUnitSpec" name="test commentController Save" time="0.703" />
+  <testcase classname="comtrek.CommentControllerUnitSpec" name="test commentController Show" time="0.154" />
+  <testcase classname="comtrek.CommentControllerUnitSpec" name="test commentController Edit" time="0.117" />
+  <testcase classname="comtrek.CommentControllerUnitSpec" name="test commentController Update" time="0.193" />
+  <testcase classname="comtrek.CommentControllerUnitSpec" name="test commentController Delete" time="0.134" />
   <system-out><![CDATA[--Output from test commentController index--
 url expected : /comment/list , obtained  : /comment/list--Output from test commentController List--
 --Output from test commentController Create  #Error:expectedInstance--

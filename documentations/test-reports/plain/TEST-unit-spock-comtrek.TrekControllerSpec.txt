@@ -1,5 +1,5 @@
 Testsuite: comtrek.TrekControllerSpec
-Tests run: 8, Failures: 0, Errors: 0, Time elapsed: 2,125 sec
+Tests run: 8, Failures: 0, Errors: 0, Time elapsed: 1,529 sec
 ------------- Standard Output ---------------
 --Output from test trekController index--
 url expected : /trek/list , obtained  : /trek/list--Output from test trekController List--
@@ -21,11 +21,11 @@ url expected : /trek/list , obtained  : /trek/list--Output from test trekControl
 --Output from test trekController Delete--
 ------------- ---------------- ---------------
 
-Testcase: test trekController index took 0,625 sec
-Testcase: test trekController List took 0,141 sec
-Testcase: test trekController Create  #Error:expectedInstance took 0,125 sec
-Testcase: test trekController Save took 0,25 sec
-Testcase: test trekController Show took 0,219 sec
-Testcase: test trekController Edit took 0,125 sec
-Testcase: test trekController Update took 0,203 sec
-Testcase: test trekController Delete took 0,172 sec
+Testcase: test trekController index took 0,452 sec
+Testcase: test trekController List took 0,093 sec
+Testcase: test trekController Create  #Error:expectedInstance took 0,093 sec
+Testcase: test trekController Save took 0,175 sec
+Testcase: test trekController Show took 0,193 sec
+Testcase: test trekController Edit took 0,099 sec
+Testcase: test trekController Update took 0,152 sec
+Testcase: test trekController Delete took 0,091 sec

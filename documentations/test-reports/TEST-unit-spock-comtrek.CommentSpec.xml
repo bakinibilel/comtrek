@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="winterfe-877b7f" name="comtrek.CommentSpec" tests="3" time="1.875" timestamp="2013-02-13T21:27:33">
+<testsuite errors="0" failures="0" hostname="Stéven-TOSH" name="comtrek.CommentSpec" tests="3" time="1.602" timestamp="2013-02-13T22:50:28">
   <properties />
-  <testcase classname="comtrek.CommentSpec" name="test Comment all constraints comment is size using 2" time="0.765" />
-  <testcase classname="comtrek.CommentSpec" name="test Comment all constraints comment is size using 31" time="0.047" />
-  <testcase classname="comtrek.CommentSpec" name="test Comment all constraints writing_date is nullable using null" time="0.047" />
+  <testcase classname="comtrek.CommentSpec" name="test Comment all constraints comment is size using 2" time="0.711" />
+  <testcase classname="comtrek.CommentSpec" name="test Comment all constraints comment is size using 31" time="0.042" />
+  <testcase classname="comtrek.CommentSpec" name="test Comment all constraints writing_date is nullable using null" time="0.039" />
   <system-out><![CDATA[--Output from test Comment all constraints comment is size using 2--
 --Output from test Comment all constraints comment is size using 31--
 --Output from test Comment all constraints writing_date is nullable using null--
