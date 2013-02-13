@@ -30,14 +30,15 @@ class UserController {
     }
 
     def save() {
-        def userInstance = new User(params)
-        if (!userInstance.save(flush: true)) {
-            render(view: "create", model: [userInstance: userInstance])
+		UserService userservice = new UserService()
+		User user = userservice.createUser(params.firstName, params.lastName, params.gender, params.email, params.login, params.password, params.birthDate)
+        if (user.hasErrors()) {
+            render(view: "create", model: [userInstance: user])
             return
         }
 
-        flash.message = message(code: 'default.created.message', args: [message(code: 'user.label', default: 'User'), userInstance.id])
-        redirect(action: "show", id: userInstance.id)
+        flash.message = message(code: 'default.created.message', args: [message(code: 'user.label', default: 'User'), user.id])
+        redirect(action: "show", id: user.id)
     }
 
     def show(Long id) {

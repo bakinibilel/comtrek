@@ -10,6 +10,8 @@
  ******************************************************************************/
 package comtrek
 
+import java.util.Date;
+
 /**
  * 
  * @author Paolo
@@ -52,4 +54,14 @@ class User {
 				"\nbirth date : "+ birthDate+
 				"\nEmail : "+ email ;
 	}
+	
+//	User(String firstName, String lastName, String gender, String email, String login, String password, Date birthDate){
+//		this.firstName = firstName
+//		this.lastName = lastName
+//		this.gender = gender
+//		this.email = email
+//		this.login = login
+//		this.password = password
+//		this.birthDate = birthDate
+//	}
 }
