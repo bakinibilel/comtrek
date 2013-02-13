@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:8080/comtrek/" />
+<title>New Test</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">New Test</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/comtrek/trek/create</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=user</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=New User</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=firstName</td>
+	<td>steven</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lastName</td>
+	<td>bernard</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=gender</td>
+	<td>label=Male</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=login</td>
+	<td>toto@toto.to</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>toto@toto.to</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=birthDate_day</td>
+	<td>label=3</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=birthDate_year</td>
+	<td>label=2002</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=create</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=trek</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=New Trek</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name</td>
+	<td>trek test alpes</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=distance</td>
+	<td>20km</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=level</td>
+	<td>label=3</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=max_altitude</td>
+	<td>label=8391</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=average_note</td>
+	<td>label=2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=attitude_combined</td>
+	<td>450</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=average_time</td>
+	<td>200</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=create</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name</td>
+	<td>trek alpes</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=create</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name</td>
+	<td>trek</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=create</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=attitude_combined</td>
+	<td>452</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=_action_update</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Trek List</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=_action_delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure?</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
