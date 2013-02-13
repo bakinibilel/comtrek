@@ -20,15 +20,15 @@ class TrekControllerSpec extends Specification{
 
     def populateValidParams(params) {
         assert params != null
-        // TODO: Populate valid properties like...
-        //params["name"] = 'someValidName'
+        // TODO: Populate valid properties like...        
 		params["name"] = "hamza"
-		params["distance"] = "300"
-		params["level"] = "2"
-		params["max_altitude"] ="1500"
-		params["weather_link"] = "cest_quoi"
-		params["average_note"] = "2"
-		params["average_time"] = "180"
+		params["distance"] = 300
+		params["level"] = 2
+		params["attitude_combined"] = 20
+		params["max_altitude"] =1500
+		params["weather_link"] = "cestquoi"
+		params["average_note"] = 2
+		params["average_time"] = 180
 		params["user"] = new User()
 		def event1 = new Event()
 		def event2 = new Event()
@@ -87,15 +87,22 @@ class TrekControllerSpec extends Specification{
 	def "test trekController Save"() {
 		when:
 		controller.save()
+		//assert model.trekInstance != null
+		//assert view == '/trek/create'
+		//response.reset()
+		//populateValidParams(params)
+		//controller.save()
+		then:
 		assert model.trekInstance != null
 		assert view == '/trek/create'
+		when:
 		response.reset()
 		populateValidParams(params)
 		controller.save()
 		then:
 		assert response.redirectedUrl == '/trek/show/1'
 		assert controller.flash.message != null
-		assert trek.count() == 1
+		assert Trek.count() == 1
 		//where:
 		//obj        | actionString | paramList | unExpectedInstance
 		//controller | "list"       | null      | null
@@ -154,7 +161,7 @@ class TrekControllerSpec extends Specification{
 				// test invalid parameters in update
 				params.id = trek.id
 				//TODO: add invalid values to params object
-				params["average_note"] = "100"
+				params["name"] = null
 				controller.update()
 		
 				assert view == "/trek/edit"

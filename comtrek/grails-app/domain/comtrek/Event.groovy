@@ -12,7 +12,7 @@ package comtrek
 
 class Event {
 	
-	int id
+	//int id
 	Date effectiveTime
 	int averageNote
 	static hasOne = [trek: Trek, user: User]
@@ -20,7 +20,7 @@ class Event {
 	
 
     static constraints = {
-		id blank: false, nullable: false, unique: true
+		//id blank: false, nullable: false, unique: true
 		effectiveTime blank: false, nullable: false
 		averageNote range: 1..10, nullable: false
     }
