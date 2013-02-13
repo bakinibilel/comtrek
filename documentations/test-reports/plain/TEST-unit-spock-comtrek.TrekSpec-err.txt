@@ -1,0 +1,5 @@
+--Output from test trek all constraints name is size using aaaaaaaaaaaaaaaaaaaaa--
+--Output from test trek all constraints name is nullable using null--
+--Output from test trek all constraints name is size using aa--
+--Output from test trek all constraints level is nullable using null--
+--Output from test trek all constraints level is nullable using null--

@@ -1,0 +1,8 @@
+--Output from test userController index--
+--Output from test userController List--
+--Output from test userController Create  #Error:expectedInstance--
+--Output from test userController Save--
+--Output from test userController Show--
+--Output from test userController Edit--
+--Output from test userController Update--
+--Output from test userController Delete--

@@ -1,0 +1,16 @@
+Testsuite: comtrek.CommentSpec
+Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 1,875 sec
+------------- Standard Output ---------------
+--Output from test Comment all constraints comment is size using 2--
+--Output from test Comment all constraints comment is size using 31--
+--Output from test Comment all constraints writing_date is nullable using null--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from test Comment all constraints comment is size using 2--
+--Output from test Comment all constraints comment is size using 31--
+--Output from test Comment all constraints writing_date is nullable using null--
+------------- ---------------- ---------------
+
+Testcase: test Comment all constraints comment is size using 2 took 0,765 sec
+Testcase: test Comment all constraints comment is size using 31 took 0,047 sec
+Testcase: test Comment all constraints writing_date is nullable using null took 0,047 sec

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="winterfe-877b7f" name="comtrek.ParticipantSpec" tests="5" time="2.641" timestamp="2013-02-13T21:27:43">
+  <properties />
+  <testcase classname="comtrek.ParticipantSpec" name="test Participant all constraints note is range using -1" time="0.375" />
+  <testcase classname="comtrek.ParticipantSpec" name="test Participant all constraints note is range using 11" time="0.047" />
+  <testcase classname="comtrek.ParticipantSpec" name="test Participant all constraints note is valid using 10" time="0.032" />
+  <testcase classname="comtrek.ParticipantSpec" name="test Participant all constraints note is valid using 0" time="0.031" />
+  <testcase classname="comtrek.ParticipantSpec" name="test Participant all constraints note is valid using 2" time="0.031" />
+  <system-out><![CDATA[--Output from test Participant all constraints note is range using -1--
+--Output from test Participant all constraints note is range using 11--
+--Output from test Participant all constraints note is valid using 10--
+--Output from test Participant all constraints note is valid using 0--
+--Output from test Participant all constraints note is valid using 2--
+]]></system-out>
+  <system-err><![CDATA[--Output from test Participant all constraints note is range using -1--
+--Output from test Participant all constraints note is range using 11--
+--Output from test Participant all constraints note is valid using 10--
+--Output from test Participant all constraints note is valid using 0--
+--Output from test Participant all constraints note is valid using 2--
+]]></system-err>
+</testsuite>

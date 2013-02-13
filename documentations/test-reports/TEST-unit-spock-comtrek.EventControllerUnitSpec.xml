@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="winterfe-877b7f" name="comtrek.EventControllerUnitSpec" tests="8" time="2.531" timestamp="2013-02-13T21:27:35">
+  <properties />
+  <testcase classname="comtrek.EventControllerUnitSpec" name="test eventController index" time="0.641" />
+  <testcase classname="comtrek.EventControllerUnitSpec" name="test eventController List" time="0.157" />
+  <testcase classname="comtrek.EventControllerUnitSpec" name="test eventController Create  #Error:expectedInstance" time="0.156" />
+  <testcase classname="comtrek.EventControllerUnitSpec" name="test eventController Save" time="0.266" />
+  <testcase classname="comtrek.EventControllerUnitSpec" name="test eventController Show" time="0.218" />
+  <testcase classname="comtrek.EventControllerUnitSpec" name="test eventController Edit" time="0.157" />
+  <testcase classname="comtrek.EventControllerUnitSpec" name="test eventController Update" time="0.218" />
+  <testcase classname="comtrek.EventControllerUnitSpec" name="test eventController Delete" time="0.25" />
+  <system-out><![CDATA[--Output from test eventController index--
+url expected : /event/list , obtained  : /event/list--Output from test eventController List--
+--Output from test eventController Create  #Error:expectedInstance--
+--Output from test eventController Save--
+--Output from test eventController Show--
+--Output from test eventController Edit--
+--Output from test eventController Update--
+--Output from test eventController Delete--
+]]></system-out>
+  <system-err><![CDATA[--Output from test eventController index--
+--Output from test eventController List--
+--Output from test eventController Create  #Error:expectedInstance--
+--Output from test eventController Save--
+--Output from test eventController Show--
+--Output from test eventController Edit--
+--Output from test eventController Update--
+--Output from test eventController Delete--
+]]></system-err>
+</testsuite>

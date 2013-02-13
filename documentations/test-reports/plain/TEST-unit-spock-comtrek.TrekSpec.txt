@@ -1,0 +1,22 @@
+Testsuite: comtrek.TrekSpec
+Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 1,578 sec
+------------- Standard Output ---------------
+--Output from test trek all constraints name is size using aaaaaaaaaaaaaaaaaaaaa--
+--Output from test trek all constraints name is nullable using null--
+--Output from test trek all constraints name is size using aa--
+--Output from test trek all constraints level is nullable using null--
+--Output from test trek all constraints level is nullable using null--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from test trek all constraints name is size using aaaaaaaaaaaaaaaaaaaaa--
+--Output from test trek all constraints name is nullable using null--
+--Output from test trek all constraints name is size using aa--
+--Output from test trek all constraints level is nullable using null--
+--Output from test trek all constraints level is nullable using null--
+------------- ---------------- ---------------
+
+Testcase: test trek all constraints name is size using aaaaaaaaaaaaaaaaaaaaa took 0,406 sec
+Testcase: test trek all constraints name is nullable using null took 0,031 sec
+Testcase: test trek all constraints name is size using aa took 0,047 sec
+Testcase: test trek all constraints level is nullable using null took 0,047 sec
+Testcase: test trek all constraints level is nullable using null took 0,156 sec

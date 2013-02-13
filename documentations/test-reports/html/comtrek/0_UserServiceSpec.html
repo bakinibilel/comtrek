@@ -1,0 +1,467 @@
+<!DOCTYPE html><html xmlns:lxslt="http://xml.apache.org/xslt" xmlns:stringutils="xalan://org.apache.tools.ant.util.StringUtils">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>
+                    Test - UserServiceSpec</title>
+<link rel="shortcut icon" href="http://grails.org/images/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" title="Style" href="../stylesheet.css">
+</head>
+<body>
+<div class="container container_8" id="report">
+<div class="grid_6">
+<a title="Home" href="../index.html">
+<div class="grailslogo"></div>
+</a>
+<h1>UserServiceSpec</h1>
+<h2>Package: comtrek</h2>
+</div>
+<div class="grid_2">
+<nav id="navigationlinks">
+<p>
+<a href="../failed.html">
+                    Tests with failure and errors
+                </a>
+</p>
+<p>
+<a href="../index.html">
+                    Package summary
+                </a>
+</p>
+<p>
+<a href="../all.html">
+                    Show all tests
+                </a>
+</p>
+</nav>
+</div>
+<div class="clear"></div>
+<div class="testsuite error">
+<div class="header">
+<h2>UserServiceSpec</h2>
+<h3>
+                        A single test executed
+                    
+                        with
+                        one error
+                        .
+                    </h3>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="user create">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">user create</b>
+</p>
+<p class="summary">Executed in 2.422 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">could not execute query; SQL [select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query</b>
+</p>
+<pre>org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute query; SQL [select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query
+	at comtrek.UserService.createUser(UserService.groovy:19)
+	at comtrek.UserServiceSpec.user create(UserServiceSpec.groovy:19)
+Caused by: org.hibernate.exception.SQLGrammarException: could not execute query
+Caused by: org.h2.jdbc.JdbcSQLException: Table "USER" not found; SQL statement:
+select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.command.Parser.readTableOrView(Parser.java:4753)
+	at org.h2.command.Parser.readTableFilter(Parser.java:1080)
+	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:1686)
+	at org.h2.command.Parser.parseSelectSimple(Parser.java:1793)
+	at org.h2.command.Parser.parseSelectSub(Parser.java:1680)
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:1523)
+	at org.h2.command.Parser.parseSelect(Parser.java:1511)
+	at org.h2.command.Parser.parsePrepared(Parser.java:405)
+	at org.h2.command.Parser.parse(Parser.java:279)
+	at org.h2.command.Parser.parse(Parser.java:251)
+	at org.h2.command.Parser.prepareCommand(Parser.java:217)
+	at org.h2.engine.Session.prepareLocal(Session.java:415)
+	at org.h2.engine.Session.prepareCommand(Session.java:364)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1121)
+	at org.h2.jdbc.JdbcPreparedStatement.&lt;init&gt;(JdbcPreparedStatement.java:71)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:267)
+	at org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+	at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.prepareStatement(PoolingDataSource.java:313)
+</pre>
+</div>
+<div class="details">
+<p>
+<b class="message">could not execute query; SQL [select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query</b>
+</p>
+<pre>org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute query; SQL [select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query
+	at comtrek.UserService.createUser(UserService.groovy:19)
+	at comtrek.UserServiceSpec.user create(UserServiceSpec.groovy:19)
+Caused by: org.hibernate.exception.SQLGrammarException: could not execute query
+Caused by: org.h2.jdbc.JdbcSQLException: Table "USER" not found; SQL statement:
+select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.command.Parser.readTableOrView(Parser.java:4753)
+	at org.h2.command.Parser.readTableFilter(Parser.java:1080)
+	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:1686)
+	at org.h2.command.Parser.parseSelectSimple(Parser.java:1793)
+	at org.h2.command.Parser.parseSelectSub(Parser.java:1680)
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:1523)
+	at org.h2.command.Parser.parseSelect(Parser.java:1511)
+	at org.h2.command.Parser.parsePrepared(Parser.java:405)
+	at org.h2.command.Parser.parse(Parser.java:279)
+	at org.h2.command.Parser.parse(Parser.java:251)
+	at org.h2.command.Parser.prepareCommand(Parser.java:217)
+	at org.h2.engine.Session.prepareLocal(Session.java:415)
+	at org.h2.engine.Session.prepareCommand(Session.java:364)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1121)
+	at org.h2.jdbc.JdbcPreparedStatement.&lt;init&gt;(JdbcPreparedStatement.java:71)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:267)
+	at org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+	at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.prepareStatement(PoolingDataSource.java:313)
+</pre>
+</div>
+<div class="details">
+<p>
+<b class="message">could not execute query; SQL [select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query</b>
+</p>
+<pre>org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute query; SQL [select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query
+	at comtrek.UserService.createUser(UserService.groovy:19)
+	at comtrek.UserServiceSpec.user create(UserServiceSpec.groovy:19)
+Caused by: org.hibernate.exception.SQLGrammarException: could not execute query
+Caused by: org.h2.jdbc.JdbcSQLException: Table "USER" not found; SQL statement:
+select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.command.Parser.readTableOrView(Parser.java:4753)
+	at org.h2.command.Parser.readTableFilter(Parser.java:1080)
+	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:1686)
+	at org.h2.command.Parser.parseSelectSimple(Parser.java:1793)
+	at org.h2.command.Parser.parseSelectSub(Parser.java:1680)
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:1523)
+	at org.h2.command.Parser.parseSelect(Parser.java:1511)
+	at org.h2.command.Parser.parsePrepared(Parser.java:405)
+	at org.h2.command.Parser.parse(Parser.java:279)
+	at org.h2.command.Parser.parse(Parser.java:251)
+	at org.h2.command.Parser.prepareCommand(Parser.java:217)
+	at org.h2.engine.Session.prepareLocal(Session.java:415)
+	at org.h2.engine.Session.prepareCommand(Session.java:364)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1121)
+	at org.h2.jdbc.JdbcPreparedStatement.&lt;init&gt;(JdbcPreparedStatement.java:71)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:267)
+	at org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+	at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.prepareStatement(PoolingDataSource.java:313)
+</pre>
+</div>
+<div class="details">
+<p>
+<b class="message">could not execute query; SQL [select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query</b>
+</p>
+<pre>org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute query; SQL [select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query
+	at comtrek.UserService.createUser(UserService.groovy:19)
+	at comtrek.UserServiceSpec.user create(UserServiceSpec.groovy:19)
+Caused by: org.hibernate.exception.SQLGrammarException: could not execute query
+Caused by: org.h2.jdbc.JdbcSQLException: Table "USER" not found; SQL statement:
+select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.command.Parser.readTableOrView(Parser.java:4753)
+	at org.h2.command.Parser.readTableFilter(Parser.java:1080)
+	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:1686)
+	at org.h2.command.Parser.parseSelectSimple(Parser.java:1793)
+	at org.h2.command.Parser.parseSelectSub(Parser.java:1680)
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:1523)
+	at org.h2.command.Parser.parseSelect(Parser.java:1511)
+	at org.h2.command.Parser.parsePrepared(Parser.java:405)
+	at org.h2.command.Parser.parse(Parser.java:279)
+	at org.h2.command.Parser.parse(Parser.java:251)
+	at org.h2.command.Parser.prepareCommand(Parser.java:217)
+	at org.h2.engine.Session.prepareLocal(Session.java:415)
+	at org.h2.engine.Session.prepareCommand(Session.java:364)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1121)
+	at org.h2.jdbc.JdbcPreparedStatement.&lt;init&gt;(JdbcPreparedStatement.java:71)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:267)
+	at org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+	at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.prepareStatement(PoolingDataSource.java:313)
+</pre>
+</div>
+<div class="details">
+<p>
+<b class="message">could not execute query; SQL [select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query</b>
+</p>
+<pre>org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute query; SQL [select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query
+	at comtrek.UserService.createUser(UserService.groovy:19)
+	at comtrek.UserServiceSpec.user create(UserServiceSpec.groovy:19)
+Caused by: org.hibernate.exception.SQLGrammarException: could not execute query
+Caused by: org.h2.jdbc.JdbcSQLException: Table "USER" not found; SQL statement:
+select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.command.Parser.readTableOrView(Parser.java:4753)
+	at org.h2.command.Parser.readTableFilter(Parser.java:1080)
+	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:1686)
+	at org.h2.command.Parser.parseSelectSimple(Parser.java:1793)
+	at org.h2.command.Parser.parseSelectSub(Parser.java:1680)
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:1523)
+	at org.h2.command.Parser.parseSelect(Parser.java:1511)
+	at org.h2.command.Parser.parsePrepared(Parser.java:405)
+	at org.h2.command.Parser.parse(Parser.java:279)
+	at org.h2.command.Parser.parse(Parser.java:251)
+	at org.h2.command.Parser.prepareCommand(Parser.java:217)
+	at org.h2.engine.Session.prepareLocal(Session.java:415)
+	at org.h2.engine.Session.prepareCommand(Session.java:364)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1121)
+	at org.h2.jdbc.JdbcPreparedStatement.&lt;init&gt;(JdbcPreparedStatement.java:71)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:267)
+	at org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+	at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.prepareStatement(PoolingDataSource.java:313)
+</pre>
+</div>
+<div class="details">
+<p>
+<b class="message">could not execute query; SQL [select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query</b>
+</p>
+<pre>org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute query; SQL [select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query
+	at comtrek.UserService.createUser(UserService.groovy:19)
+	at comtrek.UserServiceSpec.user create(UserServiceSpec.groovy:19)
+Caused by: org.hibernate.exception.SQLGrammarException: could not execute query
+Caused by: org.h2.jdbc.JdbcSQLException: Table "USER" not found; SQL statement:
+select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.command.Parser.readTableOrView(Parser.java:4753)
+	at org.h2.command.Parser.readTableFilter(Parser.java:1080)
+	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:1686)
+	at org.h2.command.Parser.parseSelectSimple(Parser.java:1793)
+	at org.h2.command.Parser.parseSelectSub(Parser.java:1680)
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:1523)
+	at org.h2.command.Parser.parseSelect(Parser.java:1511)
+	at org.h2.command.Parser.parsePrepared(Parser.java:405)
+	at org.h2.command.Parser.parse(Parser.java:279)
+	at org.h2.command.Parser.parse(Parser.java:251)
+	at org.h2.command.Parser.prepareCommand(Parser.java:217)
+	at org.h2.engine.Session.prepareLocal(Session.java:415)
+	at org.h2.engine.Session.prepareCommand(Session.java:364)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1121)
+	at org.h2.jdbc.JdbcPreparedStatement.&lt;init&gt;(JdbcPreparedStatement.java:71)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:267)
+	at org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+	at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.prepareStatement(PoolingDataSource.java:313)
+</pre>
+</div>
+<div class="details">
+<p>
+<b class="message">could not execute query; SQL [select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query</b>
+</p>
+<pre>org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute query; SQL [select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query
+	at comtrek.UserService.createUser(UserService.groovy:19)
+	at comtrek.UserServiceSpec.user create(UserServiceSpec.groovy:19)
+Caused by: org.hibernate.exception.SQLGrammarException: could not execute query
+Caused by: org.h2.jdbc.JdbcSQLException: Table "USER" not found; SQL statement:
+select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.command.Parser.readTableOrView(Parser.java:4753)
+	at org.h2.command.Parser.readTableFilter(Parser.java:1080)
+	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:1686)
+	at org.h2.command.Parser.parseSelectSimple(Parser.java:1793)
+	at org.h2.command.Parser.parseSelectSub(Parser.java:1680)
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:1523)
+	at org.h2.command.Parser.parseSelect(Parser.java:1511)
+	at org.h2.command.Parser.parsePrepared(Parser.java:405)
+	at org.h2.command.Parser.parse(Parser.java:279)
+	at org.h2.command.Parser.parse(Parser.java:251)
+	at org.h2.command.Parser.prepareCommand(Parser.java:217)
+	at org.h2.engine.Session.prepareLocal(Session.java:415)
+	at org.h2.engine.Session.prepareCommand(Session.java:364)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1121)
+	at org.h2.jdbc.JdbcPreparedStatement.&lt;init&gt;(JdbcPreparedStatement.java:71)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:267)
+	at org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+	at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.prepareStatement(PoolingDataSource.java:313)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from user create--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from user create--
+2013-02-13 22:28:27,187 [main] ERROR util.JDBCExceptionReporter  - Table "USER" not found; SQL statement:
+select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
+
+2013-02-13 22:28:27,578 [main] ERROR util.JDBCExceptionReporter  - Table "USER" not found; SQL statement:
+select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
+
+2013-02-13 22:28:27,734 [main] ERROR util.JDBCExceptionReporter  - Table "USER" not found; SQL statement:
+select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
+
+2013-02-13 22:28:27,812 [main] ERROR util.JDBCExceptionReporter  - Table "USER" not found; SQL statement:
+select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
+
+2013-02-13 22:28:28,078 [main] ERROR util.JDBCExceptionReporter  - Table "USER" not found; SQL statement:
+select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
+
+2013-02-13 22:28:28,187 [main] ERROR util.JDBCExceptionReporter  - Table "USER" not found; SQL statement:
+select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
+
+2013-02-13 22:28:28,281 [main] ERROR util.JDBCExceptionReporter  - Table "USER" not found; SQL statement:
+select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
+
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+</div>
+<!--
+            Parses JUnit output and associates it with the corresponding test case
+        -->
+<script language="javascript">
+
+
+/**
+ * The JUnit report format is incredibly stuipd in the
+ * sense that it accumulates output from all test methods
+ * into a single xml node.
+ */
+(function() {
+
+    var outputElements = findOutputElements();
+    for (var i in outputElements) {
+        var outputElement = outputElements[i];
+        var textOutput = outputElement.element.firstChild.nodeValue;
+        var header = outputElement.getHeader();
+        appendTestMethodOutput(textOutput, header);
+    }
+
+    function findOutputElements() {
+        var outputElements = [];
+        var preElements = document.getElementsByTagName("pre");
+        for (var i in preElements) {
+            var preElement = preElements[i];
+            var className = preElement.className || "";
+            if (className.indexOf("stdout") >= 0) {
+                var outputElement = new OutputElement(preElement, "output");
+                outputElements.push(outputElement);
+            } else if (className.indexOf("syserr") >= 0) {
+                var outputElement = new OutputElement(preElement, "error");
+                outputElements.push(outputElement);
+            }
+        }
+
+        return outputElements;
+    }
+
+    function OutputElement(element, type) {
+        this.element = element;
+        this.type = type;
+
+        this.getHeader = function() {
+            if (type === "output") {
+                return "System output";
+            } else if ("error") {
+                return "System error";
+            }
+        }
+    }
+
+    function appendTestMethodOutput(text, header) {
+        var testOutput = new TestMethodOutput(header);
+
+        var lines = text.split(/\r\n|\r|\n/);
+        for (var i in lines) {
+            var line = lines[i];
+            var matches = line.match(/^--Output from (.*)--$/);
+            if (matches !== null && matches.length == 2) {
+                testOutput.flushToDom();
+                testOutput.testName = matches[1];
+            } else {
+                testOutput.addLine(line);
+            }
+        }
+
+        testOutput.flushToDom();
+    }
+
+    function TestMethodOutput(header) {
+        this.header = header;
+        this.testName = undefined;
+        this.buffer = "";
+
+        this.addLine = function(line) {
+            this.buffer += line + "\n";
+        }
+
+        this.flushToDom = function() {
+            if (this.testName !== undefined) {
+                var domNode = getTestcaseElementByName(this.testName);
+                if (domNode !== undefined && trimString(this.buffer).length > 0) {
+                    this.appendTo(domNode);
+                }
+
+                this.reset();
+            }
+        }
+
+        this.appendTo = function(domNode) {
+            var node = document.createElement("div");
+            node.innerHTML = '<p><b class="message">' + header + '</b></p>';
+
+            var preNode = document.createElement("pre");
+            preNode.appendChild(document.createTextNode(this.buffer));
+            node.appendChild(preNode);
+
+            var outputContainer = findElementByTagClassAndParent("div", "outputinfo", domNode);
+            outputContainer.appendChild(node);
+        }
+
+        this.reset = function() {
+            this.methodName = undefined;
+            this.buffer = "";
+        }
+    }
+
+    function getTestcaseElementByName(name) {
+        var divElements = document.getElementsByTagName("div");
+        var elementCount = divElements.length;
+        for (var i=0; i<elementCount; i++) {
+            var el = divElements[i];
+            if (el.getAttribute("data-name") === name) {
+                return el;
+            }
+        }
+    }
+
+    function findElementByTagClassAndParent(tagName, className, parentNode) {
+        var elements = parentNode.getElementsByTagName(tagName);
+        for (var i in elements) {
+            var element = elements[i];
+
+            // Not 100% correct, but good enough here
+            if (element.className !== undefined && element.className.indexOf(className) >= 0) {
+                return element;
+            }
+        }
+    }
+
+    function trimString(str) {
+        return str.replace(/^\s\s*/, '').replace(/\s\s*$/, '');
+    }
+
+})();
+
+        </script>
+</body>
+</html>

@@ -1,0 +1,1605 @@
+<!DOCTYPE html><html xmlns:lxslt="http://xml.apache.org/xslt" xmlns:stringutils="xalan://org.apache.tools.ant.util.StringUtils">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>
+        Unit Test Results
+     - All tests</title>
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="report" class="container container_8">
+<div class="grid_6 alpha">
+<div class="grailslogo"></div>
+<h1>
+        Unit Test Results
+     - All tests </h1>
+<p class="intro">
+                        Executed
+                        76
+                        tests
+                    
+                        with
+                        one error
+                        .
+                    </p>
+</div>
+<div class="grid_2 omega">
+<nav id="navigationlinks">
+<p>
+<a href="failed.html">
+                    Tests with failure and errors
+                </a>
+</p>
+<p>
+<a href="index.html">
+                    Package summary
+                </a>
+</p>
+<p>
+<a href="all.html">
+                    Show all tests
+                </a>
+</p>
+</nav>
+</div>
+<div class="clear"></div>
+<div class="testsuite error">
+<div class="header">
+<h2>UserServiceSpec</h2>
+<h3>
+                        A single test executed
+                    
+                        with
+                        one error
+                        .
+                    </h3>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="user create">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">user create</b>
+</p>
+<p class="summary">Executed in 2.422 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">could not execute query; SQL [select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query</b>
+</p>
+<pre>org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute query; SQL [select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query
+	at comtrek.UserService.createUser(UserService.groovy:19)
+	at comtrek.UserServiceSpec.user create(UserServiceSpec.groovy:19)
+Caused by: org.hibernate.exception.SQLGrammarException: could not execute query
+Caused by: org.h2.jdbc.JdbcSQLException: Table "USER" not found; SQL statement:
+select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.command.Parser.readTableOrView(Parser.java:4753)
+	at org.h2.command.Parser.readTableFilter(Parser.java:1080)
+	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:1686)
+	at org.h2.command.Parser.parseSelectSimple(Parser.java:1793)
+	at org.h2.command.Parser.parseSelectSub(Parser.java:1680)
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:1523)
+	at org.h2.command.Parser.parseSelect(Parser.java:1511)
+	at org.h2.command.Parser.parsePrepared(Parser.java:405)
+	at org.h2.command.Parser.parse(Parser.java:279)
+	at org.h2.command.Parser.parse(Parser.java:251)
+	at org.h2.command.Parser.prepareCommand(Parser.java:217)
+	at org.h2.engine.Session.prepareLocal(Session.java:415)
+	at org.h2.engine.Session.prepareCommand(Session.java:364)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1121)
+	at org.h2.jdbc.JdbcPreparedStatement.&lt;init&gt;(JdbcPreparedStatement.java:71)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:267)
+	at org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+	at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.prepareStatement(PoolingDataSource.java:313)
+</pre>
+</div>
+<div class="details">
+<p>
+<b class="message">could not execute query; SQL [select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query</b>
+</p>
+<pre>org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute query; SQL [select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query
+	at comtrek.UserService.createUser(UserService.groovy:19)
+	at comtrek.UserServiceSpec.user create(UserServiceSpec.groovy:19)
+Caused by: org.hibernate.exception.SQLGrammarException: could not execute query
+Caused by: org.h2.jdbc.JdbcSQLException: Table "USER" not found; SQL statement:
+select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.command.Parser.readTableOrView(Parser.java:4753)
+	at org.h2.command.Parser.readTableFilter(Parser.java:1080)
+	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:1686)
+	at org.h2.command.Parser.parseSelectSimple(Parser.java:1793)
+	at org.h2.command.Parser.parseSelectSub(Parser.java:1680)
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:1523)
+	at org.h2.command.Parser.parseSelect(Parser.java:1511)
+	at org.h2.command.Parser.parsePrepared(Parser.java:405)
+	at org.h2.command.Parser.parse(Parser.java:279)
+	at org.h2.command.Parser.parse(Parser.java:251)
+	at org.h2.command.Parser.prepareCommand(Parser.java:217)
+	at org.h2.engine.Session.prepareLocal(Session.java:415)
+	at org.h2.engine.Session.prepareCommand(Session.java:364)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1121)
+	at org.h2.jdbc.JdbcPreparedStatement.&lt;init&gt;(JdbcPreparedStatement.java:71)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:267)
+	at org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+	at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.prepareStatement(PoolingDataSource.java:313)
+</pre>
+</div>
+<div class="details">
+<p>
+<b class="message">could not execute query; SQL [select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query</b>
+</p>
+<pre>org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute query; SQL [select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query
+	at comtrek.UserService.createUser(UserService.groovy:19)
+	at comtrek.UserServiceSpec.user create(UserServiceSpec.groovy:19)
+Caused by: org.hibernate.exception.SQLGrammarException: could not execute query
+Caused by: org.h2.jdbc.JdbcSQLException: Table "USER" not found; SQL statement:
+select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.command.Parser.readTableOrView(Parser.java:4753)
+	at org.h2.command.Parser.readTableFilter(Parser.java:1080)
+	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:1686)
+	at org.h2.command.Parser.parseSelectSimple(Parser.java:1793)
+	at org.h2.command.Parser.parseSelectSub(Parser.java:1680)
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:1523)
+	at org.h2.command.Parser.parseSelect(Parser.java:1511)
+	at org.h2.command.Parser.parsePrepared(Parser.java:405)
+	at org.h2.command.Parser.parse(Parser.java:279)
+	at org.h2.command.Parser.parse(Parser.java:251)
+	at org.h2.command.Parser.prepareCommand(Parser.java:217)
+	at org.h2.engine.Session.prepareLocal(Session.java:415)
+	at org.h2.engine.Session.prepareCommand(Session.java:364)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1121)
+	at org.h2.jdbc.JdbcPreparedStatement.&lt;init&gt;(JdbcPreparedStatement.java:71)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:267)
+	at org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+	at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.prepareStatement(PoolingDataSource.java:313)
+</pre>
+</div>
+<div class="details">
+<p>
+<b class="message">could not execute query; SQL [select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query</b>
+</p>
+<pre>org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute query; SQL [select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query
+	at comtrek.UserService.createUser(UserService.groovy:19)
+	at comtrek.UserServiceSpec.user create(UserServiceSpec.groovy:19)
+Caused by: org.hibernate.exception.SQLGrammarException: could not execute query
+Caused by: org.h2.jdbc.JdbcSQLException: Table "USER" not found; SQL statement:
+select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.command.Parser.readTableOrView(Parser.java:4753)
+	at org.h2.command.Parser.readTableFilter(Parser.java:1080)
+	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:1686)
+	at org.h2.command.Parser.parseSelectSimple(Parser.java:1793)
+	at org.h2.command.Parser.parseSelectSub(Parser.java:1680)
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:1523)
+	at org.h2.command.Parser.parseSelect(Parser.java:1511)
+	at org.h2.command.Parser.parsePrepared(Parser.java:405)
+	at org.h2.command.Parser.parse(Parser.java:279)
+	at org.h2.command.Parser.parse(Parser.java:251)
+	at org.h2.command.Parser.prepareCommand(Parser.java:217)
+	at org.h2.engine.Session.prepareLocal(Session.java:415)
+	at org.h2.engine.Session.prepareCommand(Session.java:364)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1121)
+	at org.h2.jdbc.JdbcPreparedStatement.&lt;init&gt;(JdbcPreparedStatement.java:71)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:267)
+	at org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+	at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.prepareStatement(PoolingDataSource.java:313)
+</pre>
+</div>
+<div class="details">
+<p>
+<b class="message">could not execute query; SQL [select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query</b>
+</p>
+<pre>org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute query; SQL [select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query
+	at comtrek.UserService.createUser(UserService.groovy:19)
+	at comtrek.UserServiceSpec.user create(UserServiceSpec.groovy:19)
+Caused by: org.hibernate.exception.SQLGrammarException: could not execute query
+Caused by: org.h2.jdbc.JdbcSQLException: Table "USER" not found; SQL statement:
+select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.command.Parser.readTableOrView(Parser.java:4753)
+	at org.h2.command.Parser.readTableFilter(Parser.java:1080)
+	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:1686)
+	at org.h2.command.Parser.parseSelectSimple(Parser.java:1793)
+	at org.h2.command.Parser.parseSelectSub(Parser.java:1680)
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:1523)
+	at org.h2.command.Parser.parseSelect(Parser.java:1511)
+	at org.h2.command.Parser.parsePrepared(Parser.java:405)
+	at org.h2.command.Parser.parse(Parser.java:279)
+	at org.h2.command.Parser.parse(Parser.java:251)
+	at org.h2.command.Parser.prepareCommand(Parser.java:217)
+	at org.h2.engine.Session.prepareLocal(Session.java:415)
+	at org.h2.engine.Session.prepareCommand(Session.java:364)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1121)
+	at org.h2.jdbc.JdbcPreparedStatement.&lt;init&gt;(JdbcPreparedStatement.java:71)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:267)
+	at org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+	at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.prepareStatement(PoolingDataSource.java:313)
+</pre>
+</div>
+<div class="details">
+<p>
+<b class="message">could not execute query; SQL [select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query</b>
+</p>
+<pre>org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute query; SQL [select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query
+	at comtrek.UserService.createUser(UserService.groovy:19)
+	at comtrek.UserServiceSpec.user create(UserServiceSpec.groovy:19)
+Caused by: org.hibernate.exception.SQLGrammarException: could not execute query
+Caused by: org.h2.jdbc.JdbcSQLException: Table "USER" not found; SQL statement:
+select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.command.Parser.readTableOrView(Parser.java:4753)
+	at org.h2.command.Parser.readTableFilter(Parser.java:1080)
+	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:1686)
+	at org.h2.command.Parser.parseSelectSimple(Parser.java:1793)
+	at org.h2.command.Parser.parseSelectSub(Parser.java:1680)
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:1523)
+	at org.h2.command.Parser.parseSelect(Parser.java:1511)
+	at org.h2.command.Parser.parsePrepared(Parser.java:405)
+	at org.h2.command.Parser.parse(Parser.java:279)
+	at org.h2.command.Parser.parse(Parser.java:251)
+	at org.h2.command.Parser.prepareCommand(Parser.java:217)
+	at org.h2.engine.Session.prepareLocal(Session.java:415)
+	at org.h2.engine.Session.prepareCommand(Session.java:364)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1121)
+	at org.h2.jdbc.JdbcPreparedStatement.&lt;init&gt;(JdbcPreparedStatement.java:71)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:267)
+	at org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+	at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.prepareStatement(PoolingDataSource.java:313)
+</pre>
+</div>
+<div class="details">
+<p>
+<b class="message">could not execute query; SQL [select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query</b>
+</p>
+<pre>org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute query; SQL [select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query
+	at comtrek.UserService.createUser(UserService.groovy:19)
+	at comtrek.UserServiceSpec.user create(UserServiceSpec.groovy:19)
+Caused by: org.hibernate.exception.SQLGrammarException: could not execute query
+Caused by: org.h2.jdbc.JdbcSQLException: Table "USER" not found; SQL statement:
+select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.command.Parser.readTableOrView(Parser.java:4753)
+	at org.h2.command.Parser.readTableFilter(Parser.java:1080)
+	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:1686)
+	at org.h2.command.Parser.parseSelectSimple(Parser.java:1793)
+	at org.h2.command.Parser.parseSelectSub(Parser.java:1680)
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:1523)
+	at org.h2.command.Parser.parseSelect(Parser.java:1511)
+	at org.h2.command.Parser.parsePrepared(Parser.java:405)
+	at org.h2.command.Parser.parse(Parser.java:279)
+	at org.h2.command.Parser.parse(Parser.java:251)
+	at org.h2.command.Parser.prepareCommand(Parser.java:217)
+	at org.h2.engine.Session.prepareLocal(Session.java:415)
+	at org.h2.engine.Session.prepareCommand(Session.java:364)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1121)
+	at org.h2.jdbc.JdbcPreparedStatement.&lt;init&gt;(JdbcPreparedStatement.java:71)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:267)
+	at org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+	at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.prepareStatement(PoolingDataSource.java:313)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from user create--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from user create--
+2013-02-13 22:28:27,187 [main] ERROR util.JDBCExceptionReporter  - Table "USER" not found; SQL statement:
+select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
+
+2013-02-13 22:28:27,578 [main] ERROR util.JDBCExceptionReporter  - Table "USER" not found; SQL statement:
+select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
+
+2013-02-13 22:28:27,734 [main] ERROR util.JDBCExceptionReporter  - Table "USER" not found; SQL statement:
+select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
+
+2013-02-13 22:28:27,812 [main] ERROR util.JDBCExceptionReporter  - Table "USER" not found; SQL statement:
+select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
+
+2013-02-13 22:28:28,078 [main] ERROR util.JDBCExceptionReporter  - Table "USER" not found; SQL statement:
+select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
+
+2013-02-13 22:28:28,187 [main] ERROR util.JDBCExceptionReporter  - Table "USER" not found; SQL statement:
+select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
+
+2013-02-13 22:28:28,281 [main] ERROR util.JDBCExceptionReporter  - Table "USER" not found; SQL statement:
+select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
+
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
+<h2>CommentControllerUnitSpec</h2>
+<h3>
+                        Executed
+                        8
+                        tests
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test commentController index">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test commentController index</b>
+</p>
+<p class="summary">Executed in 4.156 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test commentController List">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test commentController List</b>
+</p>
+<p class="summary">Executed in 1.922 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test commentController Create  #Error:expectedInstance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test commentController Create  #Error:expectedInstance</b>
+</p>
+<p class="summary">Executed in 0.265 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test commentController Save">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test commentController Save</b>
+</p>
+<p class="summary">Executed in 0.907 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test commentController Show">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test commentController Show</b>
+</p>
+<p class="summary">Executed in 0.187 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test commentController Edit">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test commentController Edit</b>
+</p>
+<p class="summary">Executed in 0.172 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test commentController Update">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test commentController Update</b>
+</p>
+<p class="summary">Executed in 0.422 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test commentController Delete">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test commentController Delete</b>
+</p>
+<p class="summary">Executed in 0.203 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from test commentController index--
+url expected : /comment/list , obtained  : /comment/list--Output from test commentController List--
+--Output from test commentController Create  #Error:expectedInstance--
+--Output from test commentController Save--
+--Output from test commentController Show--
+--Output from test commentController Edit--
+--Output from test commentController Update--
+--Output from test commentController Delete--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from test commentController index--
+--Output from test commentController List--
+--Output from test commentController Create  #Error:expectedInstance--
+--Output from test commentController Save--
+--Output from test commentController Show--
+--Output from test commentController Edit--
+--Output from test commentController Update--
+--Output from test commentController Delete--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
+<h2>CommentSpec</h2>
+<h3>
+                        Executed
+                        3
+                        tests
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test Comment all constraints comment is size using 2">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test Comment all constraints comment is size using 2</b>
+</p>
+<p class="summary">Executed in 0.765 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test Comment all constraints comment is size using 31">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test Comment all constraints comment is size using 31</b>
+</p>
+<p class="summary">Executed in 0.047 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test Comment all constraints writing_date is nullable using null">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test Comment all constraints writing_date is nullable using null</b>
+</p>
+<p class="summary">Executed in 0.047 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from test Comment all constraints comment is size using 2--
+--Output from test Comment all constraints comment is size using 31--
+--Output from test Comment all constraints writing_date is nullable using null--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from test Comment all constraints comment is size using 2--
+--Output from test Comment all constraints comment is size using 31--
+--Output from test Comment all constraints writing_date is nullable using null--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
+<h2>EventControllerUnitSpec</h2>
+<h3>
+                        Executed
+                        8
+                        tests
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test eventController index">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test eventController index</b>
+</p>
+<p class="summary">Executed in 0.641 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test eventController List">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test eventController List</b>
+</p>
+<p class="summary">Executed in 0.157 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test eventController Create  #Error:expectedInstance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test eventController Create  #Error:expectedInstance</b>
+</p>
+<p class="summary">Executed in 0.156 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test eventController Save">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test eventController Save</b>
+</p>
+<p class="summary">Executed in 0.266 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test eventController Show">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test eventController Show</b>
+</p>
+<p class="summary">Executed in 0.218 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test eventController Edit">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test eventController Edit</b>
+</p>
+<p class="summary">Executed in 0.157 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test eventController Update">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test eventController Update</b>
+</p>
+<p class="summary">Executed in 0.218 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test eventController Delete">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test eventController Delete</b>
+</p>
+<p class="summary">Executed in 0.25 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from test eventController index--
+url expected : /event/list , obtained  : /event/list--Output from test eventController List--
+--Output from test eventController Create  #Error:expectedInstance--
+--Output from test eventController Save--
+--Output from test eventController Show--
+--Output from test eventController Edit--
+--Output from test eventController Update--
+--Output from test eventController Delete--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from test eventController index--
+--Output from test eventController List--
+--Output from test eventController Create  #Error:expectedInstance--
+--Output from test eventController Save--
+--Output from test eventController Show--
+--Output from test eventController Edit--
+--Output from test eventController Update--
+--Output from test eventController Delete--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
+<h2>EventSpec</h2>
+<h3>
+                        Executed
+                        3
+                        tests
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test Event all constraints averageNote is range using -1">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test Event all constraints averageNote is range using -1</b>
+</p>
+<p class="summary">Executed in 0.5 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test Event all constraints averageNote is range using 11">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test Event all constraints averageNote is range using 11</b>
+</p>
+<p class="summary">Executed in 0.109 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test Event all constraints effectiveTime is nullable using null">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test Event all constraints effectiveTime is nullable using null</b>
+</p>
+<p class="summary">Executed in 0.172 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from test Event all constraints averageNote is range using -1--
+--Output from test Event all constraints averageNote is range using 11--
+--Output from test Event all constraints effectiveTime is nullable using null--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from test Event all constraints averageNote is range using -1--
+--Output from test Event all constraints averageNote is range using 11--
+--Output from test Event all constraints effectiveTime is nullable using null--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
+<h2>ParticipantControllerSpec</h2>
+<h3>
+                        Executed
+                        8
+                        tests
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test participantController index">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test participantController index</b>
+</p>
+<p class="summary">Executed in 1.109 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test participantController List">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test participantController List</b>
+</p>
+<p class="summary">Executed in 0.157 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test participantController Create  #Error:expectedInstance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test participantController Create  #Error:expectedInstance</b>
+</p>
+<p class="summary">Executed in 0.125 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test participantController Save">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test participantController Save</b>
+</p>
+<p class="summary">Executed in 0.172 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test participantController Show">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test participantController Show</b>
+</p>
+<p class="summary">Executed in 0.172 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test participantController Edit">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test participantController Edit</b>
+</p>
+<p class="summary">Executed in 0.141 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test participantController Update">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test participantController Update</b>
+</p>
+<p class="summary">Executed in 0.172 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test participantController Delete">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test participantController Delete</b>
+</p>
+<p class="summary">Executed in 0.203 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from test participantController index--
+url expected : /participant/list , obtained  : /participant/list--Output from test participantController List--
+--Output from test participantController Create  #Error:expectedInstance--
+--Output from test participantController Save--
+--Output from test participantController Show--
+--Output from test participantController Edit--
+--Output from test participantController Update--
+--Output from test participantController Delete--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from test participantController index--
+--Output from test participantController List--
+--Output from test participantController Create  #Error:expectedInstance--
+--Output from test participantController Save--
+--Output from test participantController Show--
+--Output from test participantController Edit--
+--Output from test participantController Update--
+--Output from test participantController Delete--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
+<h2>ParticipantSpec</h2>
+<h3>
+                        Executed
+                        5
+                        tests
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test Participant all constraints note is range using -1">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test Participant all constraints note is range using -1</b>
+</p>
+<p class="summary">Executed in 0.375 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test Participant all constraints note is range using 11">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test Participant all constraints note is range using 11</b>
+</p>
+<p class="summary">Executed in 0.047 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test Participant all constraints note is valid using 10">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test Participant all constraints note is valid using 10</b>
+</p>
+<p class="summary">Executed in 0.032 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test Participant all constraints note is valid using 0">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test Participant all constraints note is valid using 0</b>
+</p>
+<p class="summary">Executed in 0.031 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test Participant all constraints note is valid using 2">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test Participant all constraints note is valid using 2</b>
+</p>
+<p class="summary">Executed in 0.031 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from test Participant all constraints note is range using -1--
+--Output from test Participant all constraints note is range using 11--
+--Output from test Participant all constraints note is valid using 10--
+--Output from test Participant all constraints note is valid using 0--
+--Output from test Participant all constraints note is valid using 2--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from test Participant all constraints note is range using -1--
+--Output from test Participant all constraints note is range using 11--
+--Output from test Participant all constraints note is valid using 10--
+--Output from test Participant all constraints note is valid using 0--
+--Output from test Participant all constraints note is valid using 2--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
+<h2>TrekControllerSpec</h2>
+<h3>
+                        Executed
+                        8
+                        tests
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test trekController index">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test trekController index</b>
+</p>
+<p class="summary">Executed in 0.625 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test trekController List">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test trekController List</b>
+</p>
+<p class="summary">Executed in 0.141 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test trekController Create  #Error:expectedInstance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test trekController Create  #Error:expectedInstance</b>
+</p>
+<p class="summary">Executed in 0.125 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test trekController Save">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test trekController Save</b>
+</p>
+<p class="summary">Executed in 0.25 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test trekController Show">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test trekController Show</b>
+</p>
+<p class="summary">Executed in 0.219 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test trekController Edit">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test trekController Edit</b>
+</p>
+<p class="summary">Executed in 0.125 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test trekController Update">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test trekController Update</b>
+</p>
+<p class="summary">Executed in 0.203 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test trekController Delete">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test trekController Delete</b>
+</p>
+<p class="summary">Executed in 0.172 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from test trekController index--
+url expected : /trek/list , obtained  : /trek/list--Output from test trekController List--
+--Output from test trekController Create  #Error:expectedInstance--
+--Output from test trekController Save--
+--Output from test trekController Show--
+--Output from test trekController Edit--
+--Output from test trekController Update--
+--Output from test trekController Delete--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from test trekController index--
+--Output from test trekController List--
+--Output from test trekController Create  #Error:expectedInstance--
+--Output from test trekController Save--
+--Output from test trekController Show--
+--Output from test trekController Edit--
+--Output from test trekController Update--
+--Output from test trekController Delete--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
+<h2>TrekSpec</h2>
+<h3>
+                        Executed
+                        5
+                        tests
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test trek all constraints name is size using aaaaaaaaaaaaaaaaaaaaa">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test trek all constraints name is size using aaaaaaaaaaaaaaaaaaaaa</b>
+</p>
+<p class="summary">Executed in 0.406 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test trek all constraints name is nullable using null">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test trek all constraints name is nullable using null</b>
+</p>
+<p class="summary">Executed in 0.031 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test trek all constraints name is size using aa">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test trek all constraints name is size using aa</b>
+</p>
+<p class="summary">Executed in 0.047 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test trek all constraints level is nullable using null">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test trek all constraints level is nullable using null</b>
+</p>
+<p class="summary">Executed in 0.047 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test trek all constraints level is nullable using null">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test trek all constraints level is nullable using null</b>
+</p>
+<p class="summary">Executed in 0.156 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from test trek all constraints name is size using aaaaaaaaaaaaaaaaaaaaa--
+--Output from test trek all constraints name is nullable using null--
+--Output from test trek all constraints name is size using aa--
+--Output from test trek all constraints level is nullable using null--
+--Output from test trek all constraints level is nullable using null--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from test trek all constraints name is size using aaaaaaaaaaaaaaaaaaaaa--
+--Output from test trek all constraints name is nullable using null--
+--Output from test trek all constraints name is size using aa--
+--Output from test trek all constraints level is nullable using null--
+--Output from test trek all constraints level is nullable using null--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
+<h2>UserControllerUnitSpec</h2>
+<h3>
+                        Executed
+                        8
+                        tests
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test userController index">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test userController index</b>
+</p>
+<p class="summary">Executed in 0.672 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test userController List">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test userController List</b>
+</p>
+<p class="summary">Executed in 0.141 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test userController Create  #Error:expectedInstance">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test userController Create  #Error:expectedInstance</b>
+</p>
+<p class="summary">Executed in 0.141 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test userController Save">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test userController Save</b>
+</p>
+<p class="summary">Executed in 0.422 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test userController Show">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test userController Show</b>
+</p>
+<p class="summary">Executed in 0.172 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test userController Edit">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test userController Edit</b>
+</p>
+<p class="summary">Executed in 0.172 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test userController Update">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test userController Update</b>
+</p>
+<p class="summary">Executed in 0.265 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test userController Delete">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test userController Delete</b>
+</p>
+<p class="summary">Executed in 0.157 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from test userController index--
+url expected : /user/list , obtained  : /user/list--Output from test userController List--
+--Output from test userController Create  #Error:expectedInstance--
+--Output from test userController Save--
+--Output from test userController Show--
+--Output from test userController Edit--
+--Output from test userController Update--
+--Output from test userController Delete--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from test userController index--
+--Output from test userController List--
+--Output from test userController Create  #Error:expectedInstance--
+--Output from test userController Save--
+--Output from test userController Show--
+--Output from test userController Edit--
+--Output from test userController Update--
+--Output from test userController Delete--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
+<h2>UserSpec</h2>
+<h3>
+                        Executed
+                        19
+                        tests
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test user all constraints firstName is size using aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test user all constraints firstName is size using aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</b>
+</p>
+<p class="summary">Executed in 0.5 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test user all constraints firstName is nullable using null">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test user all constraints firstName is nullable using null</b>
+</p>
+<p class="summary">Executed in 0.047 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test user all constraints lastName is size using aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test user all constraints lastName is size using aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</b>
+</p>
+<p class="summary">Executed in 0.047 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test user all constraints lastName is nullable using null">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test user all constraints lastName is nullable using null</b>
+</p>
+<p class="summary">Executed in 0.047 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test user all constraints email is email using testFaux@Faux">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test user all constraints email is email using testFaux@Faux</b>
+</p>
+<p class="summary">Executed in 0.047 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test user all constraints gender is inList using Unknown">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test user all constraints gender is inList using Unknown</b>
+</p>
+<p class="summary">Executed in 0.031 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test user all constraints birthDate is max using Thu Feb 14 22:27:52 CET 2013">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test user all constraints birthDate is max using Thu Feb 14 22:27:52 CET 2013</b>
+</p>
+<p class="summary">Executed in 0.047 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test user all constraints password is nullable using null">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test user all constraints password is nullable using null</b>
+</p>
+<p class="summary">Executed in 0.063 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test user all constraints login is nullable using null">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test user all constraints login is nullable using null</b>
+</p>
+<p class="summary">Executed in 0.047 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="User birthDate is nullable using null">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">User birthDate is nullable using null</b>
+</p>
+<p class="summary">Executed in 0.047 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="User birthDate is valid using Tue Feb 12 22:27:53 CET 2013">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">User birthDate is valid using Tue Feb 12 22:27:53 CET 2013</b>
+</p>
+<p class="summary">Executed in 0.031 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="user gender is inList using Unknown">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">user gender is inList using Unknown</b>
+</p>
+<p class="summary">Executed in 0.047 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="user gender is nullable using null">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">user gender is nullable using null</b>
+</p>
+<p class="summary">Executed in 0.047 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="user gender is valid using ">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">user gender is valid using </b>
+</p>
+<p class="summary">Executed in 0.046 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="user gender is valid using Male">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">user gender is valid using Male</b>
+</p>
+<p class="summary">Executed in 0.032 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="user gender is valid using Female">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">user gender is valid using Female</b>
+</p>
+<p class="summary">Executed in 0.047 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="user login is nullable using null">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">user login is nullable using null</b>
+</p>
+<p class="summary">Executed in 0.078 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="user login is valid using bobafet">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">user login is valid using bobafet</b>
+</p>
+<p class="summary">Executed in 0.047 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="user login is valid using bobajunior">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">user login is valid using bobajunior</b>
+</p>
+<p class="summary">Executed in 0.046 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from test user all constraints firstName is size using aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa--
+--Output from test user all constraints firstName is nullable using null--
+--Output from test user all constraints lastName is size using aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa--
+--Output from test user all constraints lastName is nullable using null--
+--Output from test user all constraints email is email using testFaux@Faux--
+--Output from test user all constraints gender is inList using Unknown--
+--Output from test user all constraints birthDate is max using Thu Feb 14 22:27:52 CET 2013--
+--Output from test user all constraints password is nullable using null--
+--Output from test user all constraints login is nullable using null--
+--Output from User birthDate is nullable using null--
+--Output from User birthDate is valid using Tue Feb 12 22:27:53 CET 2013--
+--Output from user gender is inList using Unknown--
+--Output from user gender is nullable using null--
+--Output from user gender is valid using --
+--Output from user gender is valid using Male--
+--Output from user gender is valid using Female--
+--Output from user login is nullable using null--
+--Output from user login is valid using bobafet--
+--Output from user login is valid using bobajunior--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from test user all constraints firstName is size using aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa--
+--Output from test user all constraints firstName is nullable using null--
+--Output from test user all constraints lastName is size using aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa--
+--Output from test user all constraints lastName is nullable using null--
+--Output from test user all constraints email is email using testFaux@Faux--
+--Output from test user all constraints gender is inList using Unknown--
+--Output from test user all constraints birthDate is max using Thu Feb 14 22:27:52 CET 2013--
+--Output from test user all constraints password is nullable using null--
+--Output from test user all constraints login is nullable using null--
+--Output from User birthDate is nullable using null--
+--Output from User birthDate is valid using Tue Feb 12 22:27:53 CET 2013--
+--Output from user gender is inList using Unknown--
+--Output from user gender is nullable using null--
+--Output from user gender is valid using --
+--Output from user gender is valid using Male--
+--Output from user gender is valid using Female--
+--Output from user login is nullable using null--
+--Output from user login is valid using bobafet--
+--Output from user login is valid using bobajunior--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+</div>
+<!--
+            Parses JUnit output and associates it with the corresponding test case
+        -->
+<script language="javascript">
+
+
+/**
+ * The JUnit report format is incredibly stuipd in the
+ * sense that it accumulates output from all test methods
+ * into a single xml node.
+ */
+(function() {
+
+    var outputElements = findOutputElements();
+    for (var i in outputElements) {
+        var outputElement = outputElements[i];
+        var textOutput = outputElement.element.firstChild.nodeValue;
+        var header = outputElement.getHeader();
+        appendTestMethodOutput(textOutput, header);
+    }
+
+    function findOutputElements() {
+        var outputElements = [];
+        var preElements = document.getElementsByTagName("pre");
+        for (var i in preElements) {
+            var preElement = preElements[i];
+            var className = preElement.className || "";
+            if (className.indexOf("stdout") >= 0) {
+                var outputElement = new OutputElement(preElement, "output");
+                outputElements.push(outputElement);
+            } else if (className.indexOf("syserr") >= 0) {
+                var outputElement = new OutputElement(preElement, "error");
+                outputElements.push(outputElement);
+            }
+        }
+
+        return outputElements;
+    }
+
+    function OutputElement(element, type) {
+        this.element = element;
+        this.type = type;
+
+        this.getHeader = function() {
+            if (type === "output") {
+                return "System output";
+            } else if ("error") {
+                return "System error";
+            }
+        }
+    }
+
+    function appendTestMethodOutput(text, header) {
+        var testOutput = new TestMethodOutput(header);
+
+        var lines = text.split(/\r\n|\r|\n/);
+        for (var i in lines) {
+            var line = lines[i];
+            var matches = line.match(/^--Output from (.*)--$/);
+            if (matches !== null && matches.length == 2) {
+                testOutput.flushToDom();
+                testOutput.testName = matches[1];
+            } else {
+                testOutput.addLine(line);
+            }
+        }
+
+        testOutput.flushToDom();
+    }
+
+    function TestMethodOutput(header) {
+        this.header = header;
+        this.testName = undefined;
+        this.buffer = "";
+
+        this.addLine = function(line) {
+            this.buffer += line + "\n";
+        }
+
+        this.flushToDom = function() {
+            if (this.testName !== undefined) {
+                var domNode = getTestcaseElementByName(this.testName);
+                if (domNode !== undefined && trimString(this.buffer).length > 0) {
+                    this.appendTo(domNode);
+                }
+
+                this.reset();
+            }
+        }
+
+        this.appendTo = function(domNode) {
+            var node = document.createElement("div");
+            node.innerHTML = '<p><b class="message">' + header + '</b></p>';
+
+            var preNode = document.createElement("pre");
+            preNode.appendChild(document.createTextNode(this.buffer));
+            node.appendChild(preNode);
+
+            var outputContainer = findElementByTagClassAndParent("div", "outputinfo", domNode);
+            outputContainer.appendChild(node);
+        }
+
+        this.reset = function() {
+            this.methodName = undefined;
+            this.buffer = "";
+        }
+    }
+
+    function getTestcaseElementByName(name) {
+        var divElements = document.getElementsByTagName("div");
+        var elementCount = divElements.length;
+        for (var i=0; i<elementCount; i++) {
+            var el = divElements[i];
+            if (el.getAttribute("data-name") === name) {
+                return el;
+            }
+        }
+    }
+
+    function findElementByTagClassAndParent(tagName, className, parentNode) {
+        var elements = parentNode.getElementsByTagName(tagName);
+        for (var i in elements) {
+            var element = elements[i];
+
+            // Not 100% correct, but good enough here
+            if (element.className !== undefined && element.className.indexOf(className) >= 0) {
+                return element;
+            }
+        }
+    }
+
+    function trimString(str) {
+        return str.replace(/^\s\s*/, '').replace(/\s\s*$/, '');
+    }
+
+})();
+
+        </script>
+</body>
+</html>

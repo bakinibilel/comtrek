@@ -1,0 +1,8 @@
+--Output from test commentController index--
+url expected : /comment/list , obtained  : /comment/list--Output from test commentController List--
+--Output from test commentController Create  #Error:expectedInstance--
+--Output from test commentController Save--
+--Output from test commentController Show--
+--Output from test commentController Edit--
+--Output from test commentController Update--
+--Output from test commentController Delete--

@@ -1,0 +1,19 @@
+--Output from test user all constraints firstName is size using aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa--
+--Output from test user all constraints firstName is nullable using null--
+--Output from test user all constraints lastName is size using aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa--
+--Output from test user all constraints lastName is nullable using null--
+--Output from test user all constraints email is email using testFaux@Faux--
+--Output from test user all constraints gender is inList using Unknown--
+--Output from test user all constraints birthDate is max using Thu Feb 14 22:27:52 CET 2013--
+--Output from test user all constraints password is nullable using null--
+--Output from test user all constraints login is nullable using null--
+--Output from User birthDate is nullable using null--
+--Output from User birthDate is valid using Tue Feb 12 22:27:53 CET 2013--
+--Output from user gender is inList using Unknown--
+--Output from user gender is nullable using null--
+--Output from user gender is valid using --
+--Output from user gender is valid using Male--
+--Output from user gender is valid using Female--
+--Output from user login is nullable using null--
+--Output from user login is valid using bobafet--
+--Output from user login is valid using bobajunior--

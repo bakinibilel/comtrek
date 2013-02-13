@@ -1,0 +1,3 @@
+--Output from test Comment all constraints comment is size using 2--
+--Output from test Comment all constraints comment is size using 31--
+--Output from test Comment all constraints writing_date is nullable using null--

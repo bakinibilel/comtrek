@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="winterfe-877b7f" name="comtrek.ParticipantControllerSpec" tests="8" time="2.531" timestamp="2013-02-13T21:27:40">
+  <properties />
+  <testcase classname="comtrek.ParticipantControllerSpec" name="test participantController index" time="1.109" />
+  <testcase classname="comtrek.ParticipantControllerSpec" name="test participantController List" time="0.157" />
+  <testcase classname="comtrek.ParticipantControllerSpec" name="test participantController Create  #Error:expectedInstance" time="0.125" />
+  <testcase classname="comtrek.ParticipantControllerSpec" name="test participantController Save" time="0.172" />
+  <testcase classname="comtrek.ParticipantControllerSpec" name="test participantController Show" time="0.172" />
+  <testcase classname="comtrek.ParticipantControllerSpec" name="test participantController Edit" time="0.141" />
+  <testcase classname="comtrek.ParticipantControllerSpec" name="test participantController Update" time="0.172" />
+  <testcase classname="comtrek.ParticipantControllerSpec" name="test participantController Delete" time="0.203" />
+  <system-out><![CDATA[--Output from test participantController index--
+url expected : /participant/list , obtained  : /participant/list--Output from test participantController List--
+--Output from test participantController Create  #Error:expectedInstance--
+--Output from test participantController Save--
+--Output from test participantController Show--
+--Output from test participantController Edit--
+--Output from test participantController Update--
+--Output from test participantController Delete--
+]]></system-out>
+  <system-err><![CDATA[--Output from test participantController index--
+--Output from test participantController List--
+--Output from test participantController Create  #Error:expectedInstance--
+--Output from test participantController Save--
+--Output from test participantController Show--
+--Output from test participantController Edit--
+--Output from test participantController Update--
+--Output from test participantController Delete--
+]]></system-err>
+</testsuite>

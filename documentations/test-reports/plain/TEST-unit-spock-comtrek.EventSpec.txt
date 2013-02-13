@@ -1,0 +1,16 @@
+Testsuite: comtrek.EventSpec
+Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 1,922 sec
+------------- Standard Output ---------------
+--Output from test Event all constraints averageNote is range using -1--
+--Output from test Event all constraints averageNote is range using 11--
+--Output from test Event all constraints effectiveTime is nullable using null--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from test Event all constraints averageNote is range using -1--
+--Output from test Event all constraints averageNote is range using 11--
+--Output from test Event all constraints effectiveTime is nullable using null--
+------------- ---------------- ---------------
+
+Testcase: test Event all constraints averageNote is range using -1 took 0,5 sec
+Testcase: test Event all constraints averageNote is range using 11 took 0,109 sec
+Testcase: test Event all constraints effectiveTime is nullable using null took 0,172 sec

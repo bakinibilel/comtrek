@@ -1,0 +1,64 @@
+Testsuite: comtrek.UserSpec
+Tests run: 19, Failures: 0, Errors: 0, Time elapsed: 1,359 sec
+------------- Standard Output ---------------
+--Output from test user all constraints firstName is size using aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa--
+--Output from test user all constraints firstName is nullable using null--
+--Output from test user all constraints lastName is size using aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa--
+--Output from test user all constraints lastName is nullable using null--
+--Output from test user all constraints email is email using testFaux@Faux--
+--Output from test user all constraints gender is inList using Unknown--
+--Output from test user all constraints birthDate is max using Thu Feb 14 22:27:52 CET 2013--
+--Output from test user all constraints password is nullable using null--
+--Output from test user all constraints login is nullable using null--
+--Output from User birthDate is nullable using null--
+--Output from User birthDate is valid using Tue Feb 12 22:27:53 CET 2013--
+--Output from user gender is inList using Unknown--
+--Output from user gender is nullable using null--
+--Output from user gender is valid using --
+--Output from user gender is valid using Male--
+--Output from user gender is valid using Female--
+--Output from user login is nullable using null--
+--Output from user login is valid using bobafet--
+--Output from user login is valid using bobajunior--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from test user all constraints firstName is size using aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa--
+--Output from test user all constraints firstName is nullable using null--
+--Output from test user all constraints lastName is size using aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa--
+--Output from test user all constraints lastName is nullable using null--
+--Output from test user all constraints email is email using testFaux@Faux--
+--Output from test user all constraints gender is inList using Unknown--
+--Output from test user all constraints birthDate is max using Thu Feb 14 22:27:52 CET 2013--
+--Output from test user all constraints password is nullable using null--
+--Output from test user all constraints login is nullable using null--
+--Output from User birthDate is nullable using null--
+--Output from User birthDate is valid using Tue Feb 12 22:27:53 CET 2013--
+--Output from user gender is inList using Unknown--
+--Output from user gender is nullable using null--
+--Output from user gender is valid using --
+--Output from user gender is valid using Male--
+--Output from user gender is valid using Female--
+--Output from user login is nullable using null--
+--Output from user login is valid using bobafet--
+--Output from user login is valid using bobajunior--
+------------- ---------------- ---------------
+
+Testcase: test user all constraints firstName is size using aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa took 0,5 sec
+Testcase: test user all constraints firstName is nullable using null took 0,047 sec
+Testcase: test user all constraints lastName is size using aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa took 0,047 sec
+Testcase: test user all constraints lastName is nullable using null took 0,047 sec
+Testcase: test user all constraints email is email using testFaux@Faux took 0,047 sec
+Testcase: test user all constraints gender is inList using Unknown took 0,031 sec
+Testcase: test user all constraints birthDate is max using Thu Feb 14 22:27:52 CET 2013 took 0,047 sec
+Testcase: test user all constraints password is nullable using null took 0,063 sec
+Testcase: test user all constraints login is nullable using null took 0,047 sec
+Testcase: User birthDate is nullable using null took 0,047 sec
+Testcase: User birthDate is valid using Tue Feb 12 22:27:53 CET 2013 took 0,031 sec
+Testcase: user gender is inList using Unknown took 0,047 sec
+Testcase: user gender is nullable using null took 0,047 sec
+Testcase: user gender is valid using  took 0,046 sec
+Testcase: user gender is valid using Male took 0,032 sec
+Testcase: user gender is valid using Female took 0,047 sec
+Testcase: user login is nullable using null took 0,078 sec
+Testcase: user login is valid using bobafet took 0,047 sec
+Testcase: user login is valid using bobajunior took 0,046 sec

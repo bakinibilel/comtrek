@@ -1,0 +1,22 @@
+--Output from user create--
+2013-02-13 22:28:27,187 [main] ERROR util.JDBCExceptionReporter  - Table "USER" not found; SQL statement:
+select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
+
+2013-02-13 22:28:27,578 [main] ERROR util.JDBCExceptionReporter  - Table "USER" not found; SQL statement:
+select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
+
+2013-02-13 22:28:27,734 [main] ERROR util.JDBCExceptionReporter  - Table "USER" not found; SQL statement:
+select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
+
+2013-02-13 22:28:27,812 [main] ERROR util.JDBCExceptionReporter  - Table "USER" not found; SQL statement:
+select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
+
+2013-02-13 22:28:28,078 [main] ERROR util.JDBCExceptionReporter  - Table "USER" not found; SQL statement:
+select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
+
+2013-02-13 22:28:28,187 [main] ERROR util.JDBCExceptionReporter  - Table "USER" not found; SQL statement:
+select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
+
+2013-02-13 22:28:28,281 [main] ERROR util.JDBCExceptionReporter  - Table "USER" not found; SQL statement:
+select this_.id as id0_0_, this_.version as version0_0_, this_.birthDate as birthDate0_0_, this_.email as email0_0_, this_.firstName as firstName0_0_, this_.gender as gender0_0_, this_.lastName as lastName0_0_, this_.login as login0_0_, this_.password as password0_0_ from User this_ where this_.login=? [42102-164]
+

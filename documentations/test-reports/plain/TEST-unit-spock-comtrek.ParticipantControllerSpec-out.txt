@@ -1,0 +1,8 @@
+--Output from test participantController index--
+url expected : /participant/list , obtained  : /participant/list--Output from test participantController List--
+--Output from test participantController Create  #Error:expectedInstance--
+--Output from test participantController Save--
+--Output from test participantController Show--
+--Output from test participantController Edit--
+--Output from test participantController Update--
+--Output from test participantController Delete--

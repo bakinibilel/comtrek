@@ -1,0 +1,31 @@
+Testsuite: comtrek.CommentControllerUnitSpec
+Tests run: 8, Failures: 0, Errors: 0, Time elapsed: 8,547 sec
+------------- Standard Output ---------------
+--Output from test commentController index--
+url expected : /comment/list , obtained  : /comment/list--Output from test commentController List--
+--Output from test commentController Create  #Error:expectedInstance--
+--Output from test commentController Save--
+--Output from test commentController Show--
+--Output from test commentController Edit--
+--Output from test commentController Update--
+--Output from test commentController Delete--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from test commentController index--
+--Output from test commentController List--
+--Output from test commentController Create  #Error:expectedInstance--
+--Output from test commentController Save--
+--Output from test commentController Show--
+--Output from test commentController Edit--
+--Output from test commentController Update--
+--Output from test commentController Delete--
+------------- ---------------- ---------------
+
+Testcase: test commentController index took 4,156 sec
+Testcase: test commentController List took 1,922 sec
+Testcase: test commentController Create  #Error:expectedInstance took 0,265 sec
+Testcase: test commentController Save took 0,907 sec
+Testcase: test commentController Show took 0,187 sec
+Testcase: test commentController Edit took 0,172 sec
+Testcase: test commentController Update took 0,422 sec
+Testcase: test commentController Delete took 0,203 sec

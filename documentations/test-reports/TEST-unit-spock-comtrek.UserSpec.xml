@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="winterfe-877b7f" name="comtrek.UserSpec" tests="19" time="1.359" timestamp="2013-02-13T21:27:52">
+  <properties />
+  <testcase classname="comtrek.UserSpec" name="test user all constraints firstName is size using aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" time="0.5" />
+  <testcase classname="comtrek.UserSpec" name="test user all constraints firstName is nullable using null" time="0.047" />
+  <testcase classname="comtrek.UserSpec" name="test user all constraints lastName is size using aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" time="0.047" />
+  <testcase classname="comtrek.UserSpec" name="test user all constraints lastName is nullable using null" time="0.047" />
+  <testcase classname="comtrek.UserSpec" name="test user all constraints email is email using testFaux@Faux" time="0.047" />
+  <testcase classname="comtrek.UserSpec" name="test user all constraints gender is inList using Unknown" time="0.031" />
+  <testcase classname="comtrek.UserSpec" name="test user all constraints birthDate is max using Thu Feb 14 22:27:52 CET 2013" time="0.047" />
+  <testcase classname="comtrek.UserSpec" name="test user all constraints password is nullable using null" time="0.063" />
+  <testcase classname="comtrek.UserSpec" name="test user all constraints login is nullable using null" time="0.047" />
+  <testcase classname="comtrek.UserSpec" name="User birthDate is nullable using null" time="0.047" />
+  <testcase classname="comtrek.UserSpec" name="User birthDate is valid using Tue Feb 12 22:27:53 CET 2013" time="0.031" />
+  <testcase classname="comtrek.UserSpec" name="user gender is inList using Unknown" time="0.047" />
+  <testcase classname="comtrek.UserSpec" name="user gender is nullable using null" time="0.047" />
+  <testcase classname="comtrek.UserSpec" name="user gender is valid using " time="0.046" />
+  <testcase classname="comtrek.UserSpec" name="user gender is valid using Male" time="0.032" />
+  <testcase classname="comtrek.UserSpec" name="user gender is valid using Female" time="0.047" />
+  <testcase classname="comtrek.UserSpec" name="user login is nullable using null" time="0.078" />
+  <testcase classname="comtrek.UserSpec" name="user login is valid using bobafet" time="0.047" />
+  <testcase classname="comtrek.UserSpec" name="user login is valid using bobajunior" time="0.046" />
+  <system-out><![CDATA[--Output from test user all constraints firstName is size using aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa--
+--Output from test user all constraints firstName is nullable using null--
+--Output from test user all constraints lastName is size using aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa--
+--Output from test user all constraints lastName is nullable using null--
+--Output from test user all constraints email is email using testFaux@Faux--
+--Output from test user all constraints gender is inList using Unknown--
+--Output from test user all constraints birthDate is max using Thu Feb 14 22:27:52 CET 2013--
+--Output from test user all constraints password is nullable using null--
+--Output from test user all constraints login is nullable using null--
+--Output from User birthDate is nullable using null--
+--Output from User birthDate is valid using Tue Feb 12 22:27:53 CET 2013--
+--Output from user gender is inList using Unknown--
+--Output from user gender is nullable using null--
+--Output from user gender is valid using --
+--Output from user gender is valid using Male--
+--Output from user gender is valid using Female--
+--Output from user login is nullable using null--
+--Output from user login is valid using bobafet--
+--Output from user login is valid using bobajunior--
+]]></system-out>
+  <system-err><![CDATA[--Output from test user all constraints firstName is size using aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa--
+--Output from test user all constraints firstName is nullable using null--
+--Output from test user all constraints lastName is size using aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa--
+--Output from test user all constraints lastName is nullable using null--
+--Output from test user all constraints email is email using testFaux@Faux--
+--Output from test user all constraints gender is inList using Unknown--
+--Output from test user all constraints birthDate is max using Thu Feb 14 22:27:52 CET 2013--
+--Output from test user all constraints password is nullable using null--
+--Output from test user all constraints login is nullable using null--
+--Output from User birthDate is nullable using null--
+--Output from User birthDate is valid using Tue Feb 12 22:27:53 CET 2013--
+--Output from user gender is inList using Unknown--
+--Output from user gender is nullable using null--
+--Output from user gender is valid using --
+--Output from user gender is valid using Male--
+--Output from user gender is valid using Female--
+--Output from user login is nullable using null--
+--Output from user login is valid using bobafet--
+--Output from user login is valid using bobajunior--
+]]></system-err>
+</testsuite>

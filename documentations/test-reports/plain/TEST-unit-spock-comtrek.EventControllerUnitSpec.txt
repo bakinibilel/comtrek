@@ -1,0 +1,31 @@
+Testsuite: comtrek.EventControllerUnitSpec
+Tests run: 8, Failures: 0, Errors: 0, Time elapsed: 2,531 sec
+------------- Standard Output ---------------
+--Output from test eventController index--
+url expected : /event/list , obtained  : /event/list--Output from test eventController List--
+--Output from test eventController Create  #Error:expectedInstance--
+--Output from test eventController Save--
+--Output from test eventController Show--
+--Output from test eventController Edit--
+--Output from test eventController Update--
+--Output from test eventController Delete--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from test eventController index--
+--Output from test eventController List--
+--Output from test eventController Create  #Error:expectedInstance--
+--Output from test eventController Save--
+--Output from test eventController Show--
+--Output from test eventController Edit--
+--Output from test eventController Update--
+--Output from test eventController Delete--
+------------- ---------------- ---------------
+
+Testcase: test eventController index took 0,641 sec
+Testcase: test eventController List took 0,157 sec
+Testcase: test eventController Create  #Error:expectedInstance took 0,156 sec
+Testcase: test eventController Save took 0,266 sec
+Testcase: test eventController Show took 0,218 sec
+Testcase: test eventController Edit took 0,157 sec
+Testcase: test eventController Update took 0,218 sec
+Testcase: test eventController Delete took 0,25 sec

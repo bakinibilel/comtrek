@@ -1,0 +1,31 @@
+Testsuite: comtrek.ParticipantControllerSpec
+Tests run: 8, Failures: 0, Errors: 0, Time elapsed: 2,531 sec
+------------- Standard Output ---------------
+--Output from test participantController index--
+url expected : /participant/list , obtained  : /participant/list--Output from test participantController List--
+--Output from test participantController Create  #Error:expectedInstance--
+--Output from test participantController Save--
+--Output from test participantController Show--
+--Output from test participantController Edit--
+--Output from test participantController Update--
+--Output from test participantController Delete--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from test participantController index--
+--Output from test participantController List--
+--Output from test participantController Create  #Error:expectedInstance--
+--Output from test participantController Save--
+--Output from test participantController Show--
+--Output from test participantController Edit--
+--Output from test participantController Update--
+--Output from test participantController Delete--
+------------- ---------------- ---------------
+
+Testcase: test participantController index took 1,109 sec
+Testcase: test participantController List took 0,157 sec
+Testcase: test participantController Create  #Error:expectedInstance took 0,125 sec
+Testcase: test participantController Save took 0,172 sec
+Testcase: test participantController Show took 0,172 sec
+Testcase: test participantController Edit took 0,141 sec
+Testcase: test participantController Update took 0,172 sec
+Testcase: test participantController Delete took 0,203 sec

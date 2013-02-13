@@ -1,0 +1,8 @@
+--Output from test eventController index--
+url expected : /event/list , obtained  : /event/list--Output from test eventController List--
+--Output from test eventController Create  #Error:expectedInstance--
+--Output from test eventController Save--
+--Output from test eventController Show--
+--Output from test eventController Edit--
+--Output from test eventController Update--
+--Output from test eventController Delete--

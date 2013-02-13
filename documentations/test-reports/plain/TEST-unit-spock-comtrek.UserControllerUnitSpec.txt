@@ -1,0 +1,31 @@
+Testsuite: comtrek.UserControllerUnitSpec
+Tests run: 8, Failures: 0, Errors: 0, Time elapsed: 2,453 sec
+------------- Standard Output ---------------
+--Output from test userController index--
+url expected : /user/list , obtained  : /user/list--Output from test userController List--
+--Output from test userController Create  #Error:expectedInstance--
+--Output from test userController Save--
+--Output from test userController Show--
+--Output from test userController Edit--
+--Output from test userController Update--
+--Output from test userController Delete--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from test userController index--
+--Output from test userController List--
+--Output from test userController Create  #Error:expectedInstance--
+--Output from test userController Save--
+--Output from test userController Show--
+--Output from test userController Edit--
+--Output from test userController Update--
+--Output from test userController Delete--
+------------- ---------------- ---------------
+
+Testcase: test userController index took 0,672 sec
+Testcase: test userController List took 0,141 sec
+Testcase: test userController Create  #Error:expectedInstance took 0,141 sec
+Testcase: test userController Save took 0,422 sec
+Testcase: test userController Show took 0,172 sec
+Testcase: test userController Edit took 0,172 sec
+Testcase: test userController Update took 0,265 sec
+Testcase: test userController Delete took 0,157 sec

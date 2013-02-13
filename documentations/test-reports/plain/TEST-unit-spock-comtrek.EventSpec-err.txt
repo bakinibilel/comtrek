@@ -1,0 +1,3 @@
+--Output from test Event all constraints averageNote is range using -1--
+--Output from test Event all constraints averageNote is range using 11--
+--Output from test Event all constraints effectiveTime is nullable using null--
