@@ -12,7 +12,7 @@ package comtrek
 
 class Participant {
 
-	int id
+	//int id
 	int note
 	static hasOne = [user: User, events: Event]
 	static hasMany = [comments: Comment]

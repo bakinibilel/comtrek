@@ -15,7 +15,7 @@ import java.util.Date;
 
 class Trek {
 
-    int id
+    //int id
     String name
 	Float distance
 	Integer level

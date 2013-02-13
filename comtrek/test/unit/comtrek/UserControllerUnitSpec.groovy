@@ -2,9 +2,13 @@ package comtrek
 
 
 
+import grails.test.mixin.*
 import grails.test.mixin.support.*
-
-
+<<<<<<< HEAD
+import org.junit.*
+import grails.test.mixin.*
+=======
+>>>>>>> 21d3b7c4171cd7a1d1739a4635d2cc9fce08f876
 import spock.lang.Specification
 import spock.lang.Unroll
 

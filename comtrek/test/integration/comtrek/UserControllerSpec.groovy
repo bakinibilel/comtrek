@@ -20,7 +20,7 @@ class UserControllerSpec extends Specification{
 		//userCtrl.params.
 
 		then:
-		validateConstraints(obj, field, error)
+		validateConstraints(userCtrl, field, error)
 
 		where:
 		error      | field       | val
